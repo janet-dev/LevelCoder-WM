@@ -151,7 +151,7 @@ This website will initially consist of three pages:
 
 <h2 align="left"><img src="assets/images/home-trial.png"></h2>
 
-    This second version was chosen. The photograph was rotated to create a hero image, which will have an opacity, to increase the contrast between the background and coloured text. Some texts will have active links to the appropriate pages. Links for pages not yet built will be static text.
+This second version was chosen. The photograph was rotated to create a hero image, which will have an opacity, to increase the contrast between the background and coloured text. Some texts will have active links to the appropriate pages. Links for pages not yet built will be static text.
 
 <h2 align="left"><img src="assets/images/home-trial2.jpg"></h2>
 
