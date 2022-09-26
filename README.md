@@ -145,11 +145,17 @@ The site is designed to be responsive and accessible on a range of devices, maki
 
 ## Features
 This website will initially consist of three pages:
-* Home -  the user will introduced to the site and tempted to explore further. All the user stories showed a desire to either get a role in tech or find out how to use it in order to build a product.
+* Home page -  the user will introduced to the site and tempted to explore further. All the user stories showed a desire to either get a role in tech or find out how to use it in order to build a product.
+
+    The home page features something that defines Birmingham, but is technical at the same time. This amazing photograph by Christian Holzing says it all. Designs were experimented with and the first trial below was rejected for not being striking enough.
 
 <h2 align="left"><img src="assets/images/home-trial.png"></h2>
 
-* Courses - here the user may find courses and tutorials to further their objectives. 
+    This second version was chosen. The photograph was rotated to create a hero image, which will have an opacity, to increase the contrast between the background and coloured text. Some texts will have active links to the appropriate pages. Links for pages not yet built will be static text.
+
+<h2 align="left"><img src="assets/images/home-trial2.jpg"></h2>
+
+* Courses page - here the user may find courses and tutorials to further their objectives. 
 
     For example, Maria has limited funds, a dependent and a part time job. She has limited English and very little knowledge of how to start upskilling herself. She may find that a part time free bootcamp for refugees in Birmingham, with Saturday workshops, a viable option. 
 
@@ -159,7 +165,7 @@ This website will initially consist of three pages:
 
     Mo, on the other hand, does not seem to be on the look out or a course. He is a mature student who graduated years ago in engineering. He may find that a qualification with a government learner loan or a free computer science course will incease his hiring chances.
 
-* About and Contact - The site also publishes an email newsletter in order to keep users informed of upcoming developments either with the site or the West Midlands tech scene. Users will be encouraged to contribute to the site, they may have suggestions, modifications or some queries about the community in general. The site will open source so that anyone, whether they be new or experienced, may improve the site, extend it or copy it for their own use in another area, by location or subject. This page includes a subscription form and an email link.
+* About and Contact page - The site also publishes an email newsletter in order to keep users informed of upcoming developments either with the site or the West Midlands tech scene. Users will be encouraged to contribute to the site, they may have suggestions, modifications or some queries about the community in general. The site will open source so that anyone, whether they be new or experienced, may improve the site, extend it or copy it for their own use in another area, by location or subject. This page includes a subscription form and an email link.
 
 ### Navigation
 ### Pages
