@@ -68,3 +68,16 @@ a {
     color: aliceblue;
 }
 
+/*-------------------------------------------------------------Footer*/
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    min-height: 50px;
+    margin: 0;
+}
+.social-links {
+    text-align: center;
+}
+.fa-brands {
+    color: #ffffff;
+}
