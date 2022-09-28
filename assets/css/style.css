@@ -2,6 +2,15 @@
 
 
 /*-------------------------------------------------------------Text*/
+.display-4 {
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px #000;
+}
+.lead {
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    text-shadow: 1px 1px #000;
+}
 .text-orange {
     color: orange;
 }
@@ -80,4 +89,7 @@ footer {
 }
 .fa-brands {
     color: #ffffff;
+}
+footer p {
+    margin: 0;
 }
