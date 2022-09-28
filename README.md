@@ -185,6 +185,8 @@ The user stories above have identified a need for further pages:
 <h2 align="left"><img src="assets/images/courses-page-bg-trial.jpg"></h2>
 
 ## Wireframes
+Here is the original design:
+Wireframes as a [PDF](assets/images/wireframe.pdf)
 
 ## Technology Used
 
