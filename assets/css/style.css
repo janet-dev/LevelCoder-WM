@@ -80,12 +80,34 @@ a {
 /*-------------------------------------------------------------Courses page*/
 
 .courses-container {
+    min-height: 100vh;
     height: auto;
 }
 
 .card-body i {
     color: #212529;
     padding-left: 50px;
+}
+
+/*-------------------------------------------------------------About page*/
+
+.about-container {
+    min-height: 100vh;
+    height: auto;
+}
+
+form {
+    z-index: 0;
+    color: #ffffff;
+    width: 80%;
+
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+}
+
+form h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
 }
 
 /*-------------------------------------------------------------Footer*/
