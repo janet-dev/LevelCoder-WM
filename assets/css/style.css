@@ -48,7 +48,7 @@ a {
 .hero-container{
     height: 100vh;
 
-    background: url("../images/christian-holzinger-unsplash.jpg") no-repeat bottom right fixed; 
+    background: url("../images/christian-holzinger-unsplash.webp") no-repeat bottom right fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -109,6 +109,7 @@ form h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
+
 
 /*-------------------------------------------------------------Footer*/
 footer {
