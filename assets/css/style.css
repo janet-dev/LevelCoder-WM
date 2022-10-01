@@ -126,7 +126,6 @@ form h2 {
     font-weight: 300;
 }
 
-
 /*-------------------------------------------------------------Footer*/
 footer {
     background-color: #212529;
@@ -142,4 +141,7 @@ footer {
 }
 footer p {
     margin: 0;
+}
+footer i:hover {
+    color: darkorange;
 }
