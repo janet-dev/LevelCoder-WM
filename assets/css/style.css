@@ -136,7 +136,7 @@ footer {
 .social-links {
     text-align: center;
 }
-.fa-brands {
+.fa-brands, .fa-envelope {
     color: #ffffff;
 }
 footer p {
