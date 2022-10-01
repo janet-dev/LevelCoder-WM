@@ -84,9 +84,25 @@ a {
     height: auto;
 }
 
+.g-custom {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+    margin: auto;
+}
+
+.card-link {
+    color:black;
+    font-weight: bolder;
+}
+.card-link:hover {
+    color: darkorange;
+}
 .card-body i {
-    color: #212529;
+    color: black;
     padding-left: 50px;
+}
+.card-body i:hover {
+    color: darkorange;
 }
 
 /*-------------------------------------------------------------About page*/
