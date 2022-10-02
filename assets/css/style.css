@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+html {
+    height: 100vh;
+}
 
 /*-------------------------------------------------------------Text*/
 .display-4 {
@@ -12,22 +15,22 @@
     text-shadow: 1px 1px #000;
 }
 .text-orange {
-    color: orange;
+    color: #ffa500;
 }
 .text-blue {
-    color:aqua;
+    color:#00ffff;
 }
 .text-pink {
-    color: hotpink;
+    color: #ff69b4;
 }
 .text-purple {
-    color: magenta;
+    color: #ff00ff;
 }
 .text-yellow {
-    color: yellow;
+    color: #ffff00;
 }
 .text-green {
-    color: greenyellow;
+    color: #adff2f;
 }
 
 
@@ -49,11 +52,7 @@ a {
     height: 100vh;
 
     background: url("../images/christian-holzinger-unsplash.webp") no-repeat bottom right fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,14 +66,14 @@ a {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #00000066;
 }
 
 .jumbo-text {
     z-index: 0;
 }
 .lead a:hover {
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
 /*-------------------------------------------------------------Courses page*/
@@ -91,18 +90,18 @@ a {
 }
 
 .card-link {
-    color:black;
+    color:#000000;
     font-weight: bolder;
 }
 .card-link:hover {
-    color: darkorange;
+    color: #ff8c00;
 }
 .card-body i {
-    color: black;
+    color: #000000;
     padding-left: 50px;
 }
 .card-body i:hover {
-    color: darkorange;
+    color: #ff8c00;
 }
 
 /*-------------------------------------------------------------About page*/
@@ -143,5 +142,5 @@ footer p {
     margin: 0;
 }
 footer i:hover {
-    color: darkorange;
+    color: #ff8c00;
 }
