@@ -134,6 +134,10 @@ form h2 {
     font-weight: 300;
 }
 
+.confirm-h2 {
+    text-shadow: 1px 1px #000;
+}
+
 /*-------------------------------------------------------------Footer*/
 footer {
     background-color: #212529;
