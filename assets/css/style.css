@@ -84,6 +84,8 @@ a {
 .courses-container {
     min-height: 100vh;
     height: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .col {
