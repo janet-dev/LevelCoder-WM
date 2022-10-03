@@ -46,7 +46,7 @@ html {
 
 /*-------------------------------------------------------------Anchor tags*/
 a {
-    text-decoration: none;
+    text-decoration: overline;
 }
 
 /*-------------------------------------------------------------Hero Container*/
