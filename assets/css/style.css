@@ -55,6 +55,9 @@ a {
     width: 100%;
 
     background: url("../images/christian-holzinger-unsplash.webp") no-repeat bottom right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     display: flex;
     align-items: center;
