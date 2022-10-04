@@ -92,6 +92,17 @@ a {
 .col {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.full-width {
+    flex-basis: 100%;
+    text-align: center;
+    z-index: 0;
+}
+.full-width h3 {
+    color: #ffffff;
+    text-shadow: 1px 1px #000;
 }
 
 .card-link {
