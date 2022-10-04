@@ -36,140 +36,73 @@ This is the first LevelCoder site to be created. It's main function is to serve 
 
 The site is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential users.
 
-<h2 align="center"><img src="assets/images/josh-hild-unsplash.png"></h2>
+<h2 align="center"><img src="docs/pictures/josh-hild-unsplash.png"></h2>
 
 ## User stories
+* As a first time user, 
+    - I would like to view what is available from the site.
+    - I would like to easily find my way around the site.
+    - I would like to view the company's social media accounts to see other users experiences.
 
--   **Maria:**
-    “I want a job that I love and to give my daughter a better future”
+* As a returning user, 
+    - I would like to find out more information about the courses available to me.
+    - I would like to find out how to contact the company directly, so that I can ask questions.
+    - I would like to connect with the company via their social media.
 
-    - Demographics
+* As a frequent user, 
+    - I would like to see if there are more advanced courses.
+    - I would like to subscribe to a newsletter in order to receive current news about the site.
 
-        * Age: 28
-        * Education: College
-        * Location: Coventry
-        * Family: Single parent
-        * Occupation: Server
-    
-    - Brief Story
+## Design
+* Colour Scheme
+    - Bootstrap's own white text on dark grey scheme is used for the navigation and footer sections.
+* Typography
+    - For the home and about pages, Roboto font is used for the main headings for good readability and Exo for text contrast when required. These were chosen for best readability. If these fonts are unavailable, san serif is used as a fallback.
+    - The courses pages uses Bootstrap cards with it's default fonts. 
+* Imagery
+    - The home page features the striking Selfridges Building, which defines Birmingham. This background image is both artistic and futuristic, and is used as the common background throughout the site. It was chosen to be a technical and friendly hero image.
+    - On the courses page, each course is listed in it's own Boostrap card, which features the providers own logo. This is supplied in order to build up trust and to ensure the users know which provider they are directed to from the site.
 
-        Maria is a refugee and works in a cafe. She took online tech courses back home, but has only recently started attending workshops, after 2 years away from her studies. Her go-to social media app is WhatsApp as she can easily (and for free) contact friends and family back home. She currently does not use LinkedIn or Twitter, but has Facebook and an inactive Github account. Maria and her daughter live with their host family in Coventry. She is a sociable person in real life and likes to bake cakes for her friends.
-
-    - Goals
-
-        * Continue web development studies
-        * Start freelancing
-        * Find a job in tech
-
-    - Frustrations
-
-        * Work leaves her physically and mentally drained. She has no energy for studying or research. Language is a barrier and she is unsure how to navigate her way into tech.
-
-
--   **Andrew:**
-    “I want the freedom to create products that I designed”
-
-    - Demographics
-
-        * Age: 35
-        * Education: University
-        * Location: London
-        * Family: Single
-        * Occupation: Accountant
-    
-    - Brief Story
-
-        Andrew is a qualified accountant, but looking to change his career. He has a good job, no mortgage and has plenty of disposible income. He has completed some online courses in JavaScript and is on the look out for a suitable full stack bootcamp. He is active on LinkedIn and Slack. He is a new codebar student.
-
-    - Goals
-
-        * Change career to software development
-        * Move back to Birmingham
-        * Connect with other tech lovers
-
-    - Frustrations
-
-        * Continually hitting career obstacles at work and not being allowed to grow. Does not know many people in Birmingham now.
-
-
--   **Nikki:**
-    “In the future I may also build websites for other photographers”
-
-    - Demographics
-
-        * Age: 20
-        * Education: College
-        * Location: Birmingham
-        * Family: Single
-        * Occupation: Photographer
-    
-    - Brief Story
-
-        Nicki lives at home with her parents, works part time in a local hotel and has just graduated from college with a diploma in photography. She has just completed her first freelance job and would now like to build her own website. She is active on Facebook and Instagram, but not on Twitter or LinkedIn. She is looking for an easy to follow YouTube tutorial in web development.
-
-    - Goals
-
-        * Build own business website
-        * Grow own freelance business
-        * Earn enough to leave hospitality
-
-    - Frustrations
-
-        * No code sites like Wix are not flexible enough. Finding suitable web development tutorials is difficult because there are so many.
-
-
--   **Mo:** 
-    “I want wake up every morning, full of joy for my work and life”
-
-    - Demographics
-
-        * Age: 49
-        * Education: University
-        * Location: Solihull
-        * Family: Married, Children
-        * Occupation: Engineer
-    
-    - Brief Story
-
-        Mo has a mortgage and was made redundant from his last job, but now works as a bookshop assistant. He has started his career change by completing a recent 3 month government backed bootcamp in data. He now wants to concentrate in Python programming and SQL. He has attended a few tech meetups in Birmingham and is active on LinkedIn and Twitter. He is looking to start venturing into open source projects in order to give him that edge over younger candidates.
-
-    - Goals
-
-        * Change career to backend developer
-        * Gain a role in tech
-        * Earn enough to leave retail
-
-    - Frustrations
-
-        * Been seen as too old and finding the recruitment process draining
 
 ## Features
-This website will initially consist of three pages:
-* Home page -  the user will introduced to the site and tempted to explore further. All the user stories showed a desire to either get a role in tech or find out how to use it in order to build a product.
-
-    The home page features something that defines Birmingham, but is technical at the same time. This amazing photograph by Christian Holzing says it all. Designs were experimented with and the first trial below was rejected for not being striking enough.
-
-<h2 align="left"><img src="assets/images/home-trial.png"></h2>
-
-This second version was chosen. The photograph was rotated to create a hero image, which will have an opacity, to increase the contrast between the background and coloured text. Some texts will have active links to the appropriate pages. Links for pages not yet built will be static text.
-
-<h2 align="left"><img src="assets/images/home-trial2.jpg"></h2>
-
-* Courses page - here the user may find courses and tutorials to further their objectives. 
-
-    For example, Maria has limited funds, a dependent and a part time job. She has limited English and very little knowledge of how to start upskilling herself. She may find that a part time free bootcamp for refugees in Birmingham, with Saturday workshops, a viable option. 
-
-    Andrew wants a bootcamp and can afford to purchase one and/or take time out to attend a full time one. He will find both in Birmingham. It should also be noted that these local courses, often have employment partners willing to employ the course graduates or offer intern roles. 
-
-    Nikki wants a free one-stop video tutorial and YouTube would be a likely option. 
-
-    Mo, on the other hand, does not seem to be on the look out or a course. He is a mature student who graduated years ago in engineering. He may find that a qualification with a government learner loan or a free computer science course will incease his hiring chances.
-
-* About and Contact page - The site also publishes an email newsletter in order to keep users informed of upcoming developments either with the site or the West Midlands tech scene. Users will be encouraged to contribute to the site, they may have suggestions, modifications or some queries about the community in general. The site will open source so that anyone, whether they be new or experienced, may improve the site, extend it or copy it for their own use in another area, by location or subject. This page includes a subscription form and an email link.
+This website will initially consist of three visible pages (Home, Courses, About) and one hidden (subscription confirmation)
 
 ### Navigation
+Navigation bar will be the default responsive Bootstrap one.
+* Desktops - the menu items, LevelCoder branding, Home, Courses, About will be inline and fixed across the top of the screen. 
+<h2 align="left"><img src="docs/pictures/home-desktop.jpg"></h2>
+
+* Mobiles - will feature the collapsed Burger navigation, which has a dropdown menu for each of the visible pages
+<h2 align="left"><img src="docs/pictures/home-mobile.jpg"></h2>
+
 ### Pages
+* Home page - the user will introduced to the site and tempted to explore further. It will feature:
+    - Coloured text, which introduces the user to the facilities of the site.
+    - A hero image with opacity, to increase the contrast between the background and coloured text. 
+    - Some texts will have active links, indicated with overlines (mainly for mobile viewing), to link to the appropriate pages. When these links are hovered over, they will change to white. Links for pages not yet built will be static coloured text. 
+<h2 align="left"><img src="docs/pictures/home-links.jpg"></h2>
+
+* Courses page - here the user may find courses at all levels to further their objectives. 
+
+* About and Contact page 
+<h2 align="left"><img src="docs/pictures/about.jpg"></h2>
+
+- Form for newsletter subscription. Users will enter their:
+    - first name (last name is not required as the company does not collect unnecessary user data)
+    - email address
+    - select the Subscibe button to sign up to a regular email newsletter
+    Both will be checked by the standard Bootstrap validation
+    - Email link will be accessed via the envelope icon on the footer
+<h2 align="left"><img src="docs/pictures/about-footer.jpg"></h2>
+
+* Confirmation page is only visible on successful subscription to the newsletter
+<h2 align="left"><img src="docs/pictures/confirmation.jpg"></h2>
+
 ### Footer
+Footers will feature:
+* Social media links for Twitter, LinkedIn, TikTok on all pages, accessed vis the appropriate icon. When hovered over they will change to orange.
+<h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
+* Email us facility accessed via the envelope icon, only on the About page
 
 ## Future Features
 The user stories above have identified a need for further pages:
@@ -178,15 +111,9 @@ The user stories above have identified a need for further pages:
 * how to start contributing to open source projects
 * where to find free products to use for design, development and deployment
 
-## Typography and Colour Schemes
-* Font: Roboto for best readability and Exo for contrast when required
-* Navigation and footer: Dark grey with white text
-* Body of course page: background image featuring Birmingham street graffiti with white text boxes positioned on a grid
-<h2 align="left"><img src="assets/images/courses-page-bg-trial.jpg"></h2>
-
 ## Wireframes
 Here is the original design:
-Wireframes as a [PDF](assets/images/wireframe.pdf)
+Wireframes as a [PDF](docs/wireframe/wireframe.pdf)
 
 ## Technology Used
 
@@ -230,8 +157,7 @@ Rohit Sharma - Code Institute Mentor
 
 
 ### Technologies
-
-Figma Community: User Personna Template by [Ikechukwu Okonkwo](https://www.figma.com/@iykee)
+Sample README from [Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME)
 
 Wireframes from [Balsamiq](https://balsamiq.com/)
 
