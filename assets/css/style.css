@@ -4,63 +4,71 @@ html {
     height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
-/*-------------------------------------------------------------Text*/
+/*Styles the text for the jumbotro-type section. 
+Text-shadow is added where text runs across patterned background.
+Different coloured text surrounding the main heading gives a friendly feel*/
 .display-4 {
-    font-family: "Roboto", sans-serif;
     text-shadow: 2px 2px #212529;
 }
+
 .lead {
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
     text-shadow: 1px 1px #212529;
 }
+
 .text-orange {
     color: #ff8c00;
 }
+
 .text-blue {
-    color:#00ffff;
+    color: #00ffff;
 }
+
 .text-pink {
     color: #ff69b4;
 }
+
 .text-purple {
     color: #ff00ff;
 }
+
 .text-yellow {
     color: #ffff00;
 }
+
 .text-green {
     color: #adff2f;
 }
 
-
 .text-left {
     text-align: left;
 }
+
 .text-right {
     text-align: right;
 }
 
-
-/*-------------------------------------------------------------Anchor tags*/
+/*To highlight link text to all users, especially those with mobiles, 
+all anchor tags have a bar above the text*/
 a {
     text-decoration: overline;
 }
 
-/*-------------------------------------------------------------Hero Container*/
-.hero-container{
+/*The hero image covers the viewport and has an opaque layer on top.
+This makes the image a bit darker, in order to contrast better with any overlaid text.
+*/
+.hero-container {
     height: 100vh;
     width: 100%;
-
-    background: url("../images/christian-holzinger-unsplash.jpg") no-repeat bottom right fixed; 
+    background: url("../images/christian-holzinger-unsplash.jpg") no-repeat bottom right fixed;
     -webkit-background-size: cover;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
 }
 
@@ -73,14 +81,22 @@ a {
     background-color: #00000066;
 }
 
+.home-container {
+    min-height: 100vh;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+}
+
 .jumbo-text {
     z-index: 0;
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
 }
+
 .lead a:hover {
     color: #ffffff;
 }
-
-/*-------------------------------------------------------------Courses page*/
 
 .courses-container {
     min-height: 100vh;
@@ -89,49 +105,59 @@ a {
     padding-bottom: 1.5rem;
 }
 
+/*By default the Bootstrap cards were aligned to the left in their column - used flexbox to centre them*/
 .col {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/*Ensure that the title row cover the full width of the screen*/
 .full-width {
     flex-basis: 100%;
     text-align: center;
     z-index: 0;
 }
+
 .full-width p {
     font-size: large;
     color: #ffffff;
     text-shadow: 1px 1px #212529;
 }
+
 .card-link {
-    color:#212529;
+    color: #212529;
     font-weight: bolder;
 }
+
 .card-link:hover {
     color: #ff8c00;
 }
+
 .card-body i {
     color: #212529;
     padding-left: 50px;
 }
+
 .card-body i:hover {
     color: #ff8c00;
 }
-
-/*-------------------------------------------------------------About page*/
 
 .about-container {
     min-height: 100vh;
     height: auto;
 }
+
 .about-h2 {
     padding-top: 5rem;
 }
+
 .btn-subscribe {
     padding-bottom: 1.5rem;
 }
+
+/*Overrid the standard Bootstrap button colours to suit the site colour scheme.
+These styles were changed and copied from Chrome developer tools*/
 .btn-warning {
     font-weight: 500;
     --bs-btn-color: #212529;
@@ -143,18 +169,16 @@ a {
     --bs-btn-hover-bg: #212529;
     --bs-btn-hover-border-color: #212529;
 }
+
 form {
     z-index: 0;
     color: #ffffff;
     text-shadow: 1px 1px #212529;
     width: 80%;
-
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
 
 form h2 {
-    font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
 
@@ -162,22 +186,26 @@ form h2 {
     text-shadow: 1px 1px #212529;
 }
 
-/*-------------------------------------------------------------Footer*/
 footer {
     background-color: #212529;
     color: #ffffff;
     min-height: 50px;
     margin: 0;
 }
+
 .social-links {
     text-align: center;
 }
-.fa-brands, .fa-envelope {
+
+.fa-brands,
+.fa-envelope {
     color: #ffffff;
 }
+
 footer p {
     margin: 0;
 }
+
 footer i:hover {
     color: #ff8c00;
 }
