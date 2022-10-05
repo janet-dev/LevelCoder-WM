@@ -77,7 +77,7 @@ a {
     z-index: 0;
 }
 .lead a:hover {
-    color: #f0f8ff;
+    color: #ffffff;
 }
 
 /*-------------------------------------------------------------Courses page*/
@@ -102,7 +102,7 @@ a {
 }
 .full-width p {
     font-size: large;
-    color: #f0f8ff;
+    color: #ffffff;
     text-shadow: 1px 1px #212529;
 }
 .card-link {
@@ -145,7 +145,7 @@ a {
 }
 form {
     z-index: 0;
-    color: #f0f8ff;
+    color: #ffffff;
     text-shadow: 1px 1px #212529;
     width: 80%;
 
@@ -165,7 +165,7 @@ form h2 {
 /*-------------------------------------------------------------Footer*/
 footer {
     background-color: #212529;
-    color: #f0f8ff;
+    color: #ffffff;
     min-height: 50px;
     margin: 0;
 }
@@ -173,7 +173,7 @@ footer {
     text-align: center;
 }
 .fa-brands, .fa-envelope {
-    color: #f0f8ff;
+    color: #ffffff;
 }
 footer p {
     margin: 0;
