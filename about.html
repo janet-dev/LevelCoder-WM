@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Information about LevelCoder">
     <meta name="keywords" content="contact, LevelCoder, email, developers, career, tech, west midlands">
     <meta name="author" content="Janet Dornan">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/7c6e646adf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>About</title>
+    <title>LevelCoder | Connect with us | Join our tech community</title>
 </head>
+
 <body>
+    <!-- Bootstrap standard navbar with collapsing Burger menu for mobiles -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">LevelCoder</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,29 +40,42 @@
             </div>
         </div>
     </nav>
-
+    <!-- Hero image with opaque overlay to darken the image and provide site wide consistency -->
     <div class="container-fluid hero-container  about-container">
         <div class="opaque-overlay">&nbsp;</div>
+        <!-- Signup form with explanatory text, enticing the user to subscribe to a newsletter. 
+        Instead of the page being refreshed, after selecting the Subscribe button, a confirmation page will be opened in the same tab -->
         <form class="row g-5" method="GET" action="confirmation.html">
             <div class="col-12">
                 <h2 class="about-h2">What is this site about?</h2>
                 <p>
-                    This is a one-stop site for those wishing to find a career in software or web development, within the West Midlands area of England. 
-                    You will find listings of local courses; hybrid or remote, part-time or full-time, free or paid. Many of these courses require no prior qualifications, 
-                    only the desire to learn. Due to the lack of diversity in tech, some of the courses listed are restricted to certain demographics e.g. gender, ethnicity, etc
-
+                    This is a one-stop site for those wishing to find a career in software or web development, within
+                    the West Midlands area of England.
+                    You will find listings of local courses; hybrid or remote, part-time or full-time, free or paid.
+                    Many of these courses require no prior qualifications,
+                    only the desire to learn. Due to the lack of diversity in tech, some of the courses listed are
+                    restricted to certain demographics e.g. gender, ethnicity, etc.
+                    Future pages will feature local and remote meetups, friendly open source communities and projects,
+                    career support and free tools.
                 </p>
             </div>
             <div class="col-12">
                 <h2>Who are we?</h2>
                 <p>
-                    We are LevelCoder, a group of tech lovers working and studying within a 50 mile radius of Birmingham city centre. 
-                    Our aim is to make learning open to everyone with a passion for tech. We recognised that many beginners, whether they be education leavers or career changers, 
-                    were clueless about where and how to start their journey into a career in tech.
-
+                    We are LevelCoder, a group of tech lovers working and studying within a 50 mile radius of Birmingham
+                    city centre.
+                    Our aim is to make learning open to everyone with a passion for tech. We recognise that many
+                    beginners, whether they be education leavers or career changers,
+                    are clueless about where and how to start their journey into a tech career.
+                </p>
+                <p>
+                    Currently this is a minimal viable product (MVP) which will be made open source in the near future.
+                    We hope that others will contribute to this project, by improving it, adding to it or even coping it
+                    for their own community.
+                    Join our friendly community and keep up to date with local events by subscribing to our newspaper
+                    below.
                 </p>
             </div>
-
             <h2>Sign up for our weekly newsletter <i class="fa-solid fa-users-between-lines"></i></h2>
             <div class="col-md-6">
                 <label for="inputFirstName" class="form-label">First Name</label>
@@ -72,15 +89,19 @@
                 <button type="submit" class="btn btn-warning">Subscribe</button>
             </div>
         </form>
-</div>
-
+    </div>
+    <!-- Footer containing inline email and linked social media icons -->
     <footer class="container-fluid">
         <ul class="list-inline social-links py-3">
             <li class="list-inline-item">
                 <p>Connect </p>
             </li>
-            <li class="list-inline-item"> 
-                <a href="mailto:janet.d.coder@gmail.com?subject=*** Mail via LevelCoder ***&body=Dear Janet," target="_blank" rel="noopener noreferrer">
+            <li class="list-inline-item">
+                <!-- When the envelope icon is selected, the user will be able to email the company. 
+                    The user's default email system will open,  
+                    and the recepient's details and subject will be automatically filled in -->
+                <a href="mailto:janet.d.coder@gmail.com?subject=*** Mail via LevelCoder ***&body=Dear Janet,"
+                    target="_blank" rel="noopener noreferrer">
                     <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                     <span class="sr-only">Email LevelCoder</span>
                 </a>
@@ -106,7 +127,12 @@
         </ul>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
