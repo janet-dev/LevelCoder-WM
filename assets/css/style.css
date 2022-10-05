@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 
 html {
     height: 100vh;
@@ -9,15 +9,15 @@ html {
 /*-------------------------------------------------------------Text*/
 .display-4 {
     font-family: "Roboto", sans-serif;
-    text-shadow: 2px 2px #000;
+    text-shadow: 2px 2px #212529;
 }
 .lead {
-    font-family: "Exo", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
-    text-shadow: 1px 1px #000;
+    text-shadow: 1px 1px #212529;
 }
 .text-orange {
-    color: #ffa500;
+    color: #ff8c00;
 }
 .text-blue {
     color:#00ffff;
@@ -102,18 +102,18 @@ a {
 }
 .full-width p {
     font-size: large;
-    color: #ffffff;
-    text-shadow: 1px 1px #000;
+    color: #f0f8ff;
+    text-shadow: 1px 1px #212529;
 }
 .card-link {
-    color:#000000;
+    color:#212529;
     font-weight: bolder;
 }
 .card-link:hover {
     color: #ff8c00;
 }
 .card-body i {
-    color: #000000;
+    color: #212529;
     padding-left: 50px;
 }
 .card-body i:hover {
@@ -132,12 +132,24 @@ a {
 .btn-subscribe {
     padding-bottom: 1.5rem;
 }
+.btn-warning {
+    font-weight: 500;
+    --bs-btn-color: #212529;
+    --bs-btn-bg: #ff8c00;
+    --bs-btn-border-color: #ff8c00;
+    --bs-btn-active-bg: #ff8c00;
+    --bs-btn-active-border-color: #ff8c00;
+    --bs-btn-hover-color: #ff8c00;
+    --bs-btn-hover-bg: #212529;
+    --bs-btn-hover-border-color: #212529;
+}
 form {
     z-index: 0;
-    color: #ffffff;
+    color: #f0f8ff;
+    text-shadow: 1px 1px #212529;
     width: 80%;
 
-    font-family: "Exo", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
 
@@ -147,13 +159,13 @@ form h2 {
 }
 
 .confirm-h2 {
-    text-shadow: 1px 1px #000;
+    text-shadow: 1px 1px #212529;
 }
 
 /*-------------------------------------------------------------Footer*/
 footer {
     background-color: #212529;
-    color: #ffffff;
+    color: #f0f8ff;
     min-height: 50px;
     margin: 0;
 }
@@ -161,7 +173,7 @@ footer {
     text-align: center;
 }
 .fa-brands, .fa-envelope {
-    color: #ffffff;
+    color: #f0f8ff;
 }
 footer p {
     margin: 0;
