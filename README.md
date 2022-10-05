@@ -57,10 +57,10 @@ The site is designed to be responsive and accessible on a range of devices, maki
 ## Design
 * Colour Scheme
     - Bootstrap's own white (#ffffff) text on dark grey (#212529) scheme is used for the navigation and footer sections.
-    - 
+    - Colours white (#ffffff)and dark grey (#212529) are used for text.
+    - Orange (#ff8c00) is used as an extra indicator when hovering over links.
 * Typography
     - For the home and about pages, Roboto font is used for the main headings for good readability and text contrast when required. This was chosen for best readability. If this font is unavailable, san serif is used as a fallback.
-    - The courses pages uses Bootstrap cards with it's default fonts. 
 * Imagery
     - The home page features the striking Selfridges Building, which defines Birmingham. This background image is both artistic and futuristic, and is used as the common background throughout the site. It was chosen to be a technical and friendly hero image.
     - On the courses page, each course is listed in it's own Bootstrap card, which features the providers own logo. This is supplied in order to build up trust and to ensure the users know which provider they are directed to from the site.
