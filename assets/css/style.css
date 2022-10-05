@@ -100,11 +100,11 @@ a {
     text-align: center;
     z-index: 0;
 }
-.full-width h3 {
+.full-width p {
+    font-size: large;
     color: #ffffff;
     text-shadow: 1px 1px #000;
 }
-
 .card-link {
     color:#000000;
     font-weight: bolder;
