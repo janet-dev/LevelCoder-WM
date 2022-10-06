@@ -119,8 +119,17 @@ This makes the image a bit darker, in order to contrast better with any overlaid
     z-index: 0;
 }
 
+hr {
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0 ;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.75;
+}
+
 .full-width p {
-    font-size: large;
+    font-size: x-large;
     color: #ffffff;
     text-shadow: 1px 1px #212529;
 }
