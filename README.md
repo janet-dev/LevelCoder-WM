@@ -305,6 +305,71 @@ confirmation.html
     ```
 
 ### Test Cases
+## Navigation
+* Desktop
+
+    | Feature       | Input         | Output             |
+    | ------------- | ------------- | ------------------ |
+    | LevelCoder    | selected      | opens index.html   |
+    | Home          | selected      | opens index.html   |
+    | Courses       | selected      | opens courses.html |
+    | About         | selected      | opens about.html   |
+
+* Mobile
+
+    | Feature        | Input         | Output                |
+    | -------------- | ------------- | --------------------- |
+    | Burger icon    | selected      | opens dropdown menu   |
+    | LevelCoder     | selected      | opens index.html      |
+    | Home           | selected      | opens index.html      |
+    | Courses        | selected      | opens courses.html    |
+    | About          | selected      | opens about.html      |
+
+## Footer
+* Desktop and mobile
+
+    | Feature       | Input         | Output                 |
+    | ------------- | ------------- | ---------------------- |
+    | Twitter icon  | selected      | opens Twitter account  |
+    | LinkedIn icon | selected      | opens LinkedIn account |
+    | TikTok icon   | selected      | opens TikTok account   |
+    | Envelope icon | selected      | opens email account    |
+
+## Home Page
+* Desktop and mobile
+
+    | Feature                  | Input         | Output                 |
+    | ------------------------ | ------------- | ---------------------- |
+    | reboot your career link  | selected      | opens courses.html     |
+    | find free bootcamps link | selected      | opens courses.html     |
+
+## Courses Page
+* Desktop and mobile - for each course card
+
+    | Feature                | Input         | Output                                    |
+    | ---------------------- | ------------- | ----------------------------------------- |
+    | course provider's link | selected      | opens course provider's home page         |
+    | social media link      | selected      | opens course provider's social media page |
+
+## About Page
+* Desktop and mobile form
+
+    | Feature          | Input         | Output                                        |
+    | ---------------- | ------------- | --------------------------------------------- |
+    | name input box   | typed text    | n/a                                           |
+    | email input box  | typed text    | n/a                                           |
+    | subscribe button | selected      | opens confirmation.html if name & email valid |
+    | envelope icon    | selected      | opens default email account                   |
+
+## Confirmation Page
+* Desktop and mobile
+
+    | Feature          | Input         | Output                                        |
+    | ---------------- | ------------- | --------------------------------------------- |
+    | navigation items | selected      | as above - see Navigation                     |
+    | footer items     | selected      | as above - see Footer                         |
+
+
 
 ### Supported Screen Sizes and Browsers
 Bootstrap v5.2 was used for building the site - see the [supported browsers and devices](https://getbootstrap.com/docs/5.2/getting-started/browsers-devices/)
