@@ -84,14 +84,14 @@ This makes the image a bit darker, in order to contrast better with any overlaid
 .home-container {
     min-height: 100vh;
     height: auto;
-    padding-top: 5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 0;
 }
 
 .jumbo-text {
     z-index: 0;
-    padding-top: 5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .lead a:hover {
@@ -101,7 +101,7 @@ This makes the image a bit darker, in order to contrast better with any overlaid
 .courses-container {
     min-height: 100vh;
     height: auto;
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-bottom: 1.5rem;
 }
 
@@ -112,7 +112,7 @@ This makes the image a bit darker, in order to contrast better with any overlaid
     flex-wrap: wrap;
 }
 
-/*Ensure that the title row cover the full width of the screen*/
+/*Ensure that the title row covers the full width of the screen*/
 .full-width {
     flex-basis: 100%;
     text-align: center;
@@ -165,7 +165,7 @@ hr {
     padding-bottom: 1.5rem;
 }
 
-/*Overrid the standard Bootstrap button colours to suit the site colour scheme.
+/*Overrides the standard Bootstrap button colours to suit the site colour scheme.
 These styles were changed and copied from Chrome developer tools*/
 .btn-warning {
     font-weight: 500;
@@ -189,6 +189,10 @@ form {
 
 form h2 {
     font-weight: 300;
+}
+
+.confirm-container {
+    height: 100vh;
 }
 
 .confirm-h2 {
