@@ -2,7 +2,7 @@
 
 Welcome!
 
-This is a Code Institute student project for Milestone 1, built to satisfy the requirements for the EKC DigitalLearn Diploma (Level 5) in [Web Application Development](https://www.ekcgroup.ac.uk/ekc-digitallearn/computing/web-application-development-diploma). 
+This is a Code Institute student project for Milestone 1, built to satisfy the requirements for the EKC DigitalLearn Diploma (Level 5) in [Web Application Development](https://www.ekcgroup.ac.uk/ekc-digitallearn/computing/web-application-development-diploma?to=/placeholder.com). 
 
 ## Project Purpose
 This project has been created in order to display useful information on a deployed static website. The project was built using **Gitpod**.
@@ -30,7 +30,7 @@ The site also enhances the owner's goals by:
 
 <h1 align="center">LevelCoder - West Midlands, UK</h1>
 
-[View the live project here.](https://janet-dev.github.io/ci-project-1-level-coder/)
+[View the live project here.](https://janet-dev.github.io/ci-milestone-project-1/?to=/placeholder.com)
 
 This is the first LevelCoder site to be created. It's main function is to serve as a one-stop information site for users in the West Midlands of England. The site will provide information on how users can start and maintain their path into a new career in tech. The first area covered will be: courses, local and remote, free and paid, full-time and part-time. 
 
@@ -65,9 +65,11 @@ The site is designed to be responsive and accessible on a range of devices, maki
     - The home page features the striking Selfridges Building, which defines Birmingham. This background image is both artistic and futuristic, and is used as the common background throughout the site. It was chosen to be a technical and friendly hero image.
     - On the courses page, each course is listed in it's own Bootstrap card, which features the providers own logo. This is supplied in order to build up trust and to ensure the users know which provider they are directed to from the site.
 
+## Wireframes
+See the original design as a [wireframe PDF](docs/wireframe/wireframe.pdf). It includes both desktop and mobile versions.
 
 ## Features
-This website will initially consist of three visible pages (Home, Courses, About) and one hidden (subscription confirmation)
+This website will initially consist of three visible pages (Home, Courses, About) and one hidden (Confirmation for subscription)
 
 ### Navigation
 Navigation bar will be the default responsive Bootstrap one for all pages.
@@ -115,15 +117,15 @@ The combined About and Contact page will be composed of:
     - Email link will be accessed via the envelope icon on the footer
 <h2 align="left"><img src="docs/pictures/about-footer.jpg"></h2>
 
-* Confirmation page is only visible on successful sign up to the newsletter
+* Confirmation page is only visible on successful sign up to the newsletter and will contain the standard navigation and footer.
 <h2 align="left"><img src="docs/pictures/confirmation.jpg"></h2>
 
 ### Footer
 Footers will feature:
-* Social media links for Twitter, LinkedIn, TikTok on all pages, accessed vis the appropriate icon. When hovered over they will change to orange.
+* Social media links for Twitter, LinkedIn, TikTok on all pages, accessed via the appropriate icon. When hovered over they will change to orange.
 <h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
 
-* Email us facility accessed via the envelope icon, only on the About page
+* Email us facility accessed via the envelope icon, but only on the About page
 
 ## Future Features
 After asking the advice of the LinkedIn and codebar communities, further features are required:
@@ -132,31 +134,87 @@ After asking the advice of the LinkedIn and codebar communities, further feature
 * how to start contributing to open source projects
 * where to find free products to use for design, development and deployment
 
-## Wireframes
-Here is the original design:
-Wireframes as a [PDF](docs/wireframe/wireframe.pdf)
-
 ## Technology Used
-* HTML5 and CSS3 for building and custom styling the site.
-* Wireframes from [Balsamiq](https://balsamiq.com/)
-* IDE from [Visual Studio Code](https://code.visualstudio.com/) and built into Gitpod.
-* Developer platform from [Gitpod](https://www.gitpod.io/)
-* Bootstrap [Version 5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
-* Version control from [Git](https://git-scm.com/)
-* Project deployment provided by [GitHub Pages](https://pages.github.com/)
-* Icon library and toolkit from [Font Awesome](https://fontawesome.com/)
-* Online photo editor from [Pixlr](https://pixlr.com/x/)
-* Stock photos from [Unsplash](https://unsplash.com/)
+* [HTML5](https://en.wikipedia.org/wiki/HTML5?to=/placeholder.com) and [CSS3](https://en.wikipedia.org/wiki/CSS?to=/placeholder.com) for building and custom styling the site.
+* Wireframes from [Balsamiq](https://balsamiq.com/?to=/placeholder.com).
+* Developer platform from [Gitpod](https://www.gitpod.io/?to=/placeholder.com).
+* IDE integrated into Gitpod from [Visual Studio Code](https://code.visualstudio.com/?to=/placeholder.com).
+* Bootstrap [Version 5.2.1](https://getbootstrap.com/docs/5.2/getting-started/introduction/?to=/placeholder.com).
+* Debugging assisted by [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/?to=/placeholder.com).
+* Version control integrated into Gitpod from [Git](https://git-scm.com/?to=/placeholder.com).
+* Project deployment provided by [GitHub Pages](https://pages.github.com/?to=/placeholder.com).
+* HTML validation from [W3C](https://validator.w3.org/#validate_by_input?to=/placeholder.com).
+* CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/#validate_by_input?to=/placeholder.com).
+* Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/?to=/placeholder.com).
+* Roboto font from [Google Fonts](https://fonts.google.com/?to=/placeholder.com).
+* Icon library and toolkit from [Font Awesome](https://fontawesome.com/?to=/placeholder.com).
+* Online photo editor from [Pixlr](https://pixlr.com/x/?to=/placeholder.com).
+* Stock photos from [Unsplash](https://unsplash.com?to=/placeholder.com/).
 
 ## Testing
 
 ### Code Validation
+* HTML - No errors or warnings were detected by W3C Validation for pages:
+    - [index](docs/testing/w3c-validation/w3c-html-index.pdf)
+    - [courses](docs/testing/w3c-validation/w3c-html-courses.pdf)
+    - [about](docs/testing/w3c-validation/w3c-html-about.pdf)
+    - [confirmation](docs/testing/w3c-validation/w3c-html-confirm.pdf)
+<h2 align="left"><img src="docs/pictures/test-index.jpg"></h2>
+
+* CSS - No errors or warnings were detected by W3C Jigsaw Validation for:
+    - [style](docs/testing/w3c-validation/w3c-css.pdf)
+<h2 align="left"><img src="docs/pictures/test-css.jpg"></h2>
+
+### Lighthouse
+Lighthouse is an automated tool for improving the quality of web page. It checks the current webpage for performance, accessibility, best practices and SEO. It can be accessed from the Chrome Developer Tools: 
+<h2 align="left"><img src="docs/pictures/dev-tools.jpg"></h2>
+<h2 align="left"><img src="docs/pictures/lighthouse.jpg"></h2>
+
+A summary for the performance of each page is provided:
+
+index.html
+
+- Desktop - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-index-desktop-2.pdf) for more information.
+<h2 align="left"><img src="docs/pictures/index-summary-desktop.jpg"></h2>
+
+- Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-index-mobile-2.pdf) for more information.
+<h2 align="left"><img src="docs/pictures/index-summary-mobile.jpg"></h2>
+
+courses.html
+
+- Desktop - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-courses-desktop-2.pdf) for more information.
+<h2 align="left"><img src="docs/pictures/courses-summary-desktop.jpg"></h2>
+
+- Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-courses-mobile-2.pdf) for more information.
+<h2 align="left"><img src="docs/pictures/courses-summary-mobile.jpg"></h2>
+
+about.html
+
+- Desktop - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-about-desktop-2.pdf) for more information.
+<h2 align="left"><img src="docs/pictures/about-summary-desktop.jpg"></h2>
+
+- Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-about-mobile-2.pdf) for more information.
+<h2 align="left"><img src="docs/pictures/about-summary-mobile.jpg"></h2>
+
+confirmation.html
+
+- Desktop - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-desktop-2.pdf) for more information.
+<h2 align="left"><img src="docs/pictures/confirm-summary-desktop.jpg"></h2>
+
+- Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-mobile-2.pdf) for more information.
+<h2 align="left"><img src="docs/pictures/confirm-summary-mobile.jpg"></h2>
+
 
 ### Test Cases
 
 ### Bugs Fixed
 
 ### Supported Screen Sizes and Browsers
+Bootstrap v5.2 was used for building the site - see the [supported browsers and devices](https://getbootstrap.com/docs/5.2/getting-started/browsers-devices/?to=/placeholder.com)
+
+See the [six default breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/?to=/placeholder.com) provided by Bootstrap for responsive building.
+
+Testing and validation was carried out on the Chrome browser only.
 
 ## Deployment
 
@@ -190,15 +248,13 @@ Rachel Furlong - EKC DigitalLearn Course Facilitator
  
 Rohit Sharma - Code Institute Mentor
 
-Sample README from [Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME)
+Sample README from [Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME?to=/placeholder.com)
 
 
 
 ### Images
 
-Woman in front of a lit wall by [Josh Hild](https://unsplash.com/@joshhild) on Unsplash
+Woman in front of a lit wall by [Josh Hild](https://unsplash.com/@joshhild?to=/placeholder.com) on Unsplash
 
-Selfridges Building in Birmingham by [Christian Holzinger](https://unsplash.com/@pixelatelier) on Unsplash
-
-Graffiti from Digbeth in Birmingham by [Creative Nerds](https://unsplash.com/@creativenerds) on Unsplash
+Selfridges Building in Birmingham by [Christian Holzinger](https://unsplash.com/@pixelatelier?to=/placeholder.com) on Unsplash
 
