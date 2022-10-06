@@ -1,10 +1,6 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome!
-
+## Project Purpose
 This is a Code Institute student project for Milestone 1, built to satisfy the requirements for the EKC DigitalLearn Diploma (Level 5) in [Web Application Development](https://www.ekcgroup.ac.uk/ekc-digitallearn/computing/web-application-development-diploma). 
 
-## Project Purpose
 This project has been created in order to display useful information on a deployed static website. The project was built using **Gitpod**.
 
 The information has been presented in a way that ensures the users achieve their goals of:
@@ -39,20 +35,9 @@ The site is designed to be responsive and accessible on a range of devices, maki
 <h2 align="center"><img src="docs/pictures/josh-hild-unsplash.png"></h2>
 
 ## User stories
-* As a first time user, 
-    - I would like to view what is available from the site.
-    - I would like to easily find my way around the site.
-    - I would like to view the company's social media accounts to see other users experiences.
-
-* As a returning user, 
-    - I would like to find out more information about the courses available to me.
-    - I would like to find out how to contact the company directly, so that I can ask questions.
-    - I would like to connect with the company via their social media.
-
-* As a frequent user, 
-    - I would like to see if there are more advanced courses.
-    - I would like to subscribe to a newsletter in order to receive current news about the site.
-    - I would like to join a community and meet new people.
+* As a visiting user, I would like to connect with the company via their social media.
+* As a visiting user, I would like to see if there are more advanced courses.
+* As a visiting user,  I would like to subscribe to a newsletter in order to receive current news about the site.
 
 ## Design
 * Colour Scheme
@@ -368,22 +353,6 @@ confirmation.html
     | ---------------- | ------------- | --------------------------------------------- |
     | navigation items | selected      | as above - see Navigation                     |
     | footer items     | selected      | as above - see Footer                         |
-
-### Testing User Stories
-* As a first time user, 
-    - I would like to view what is available from the site.
-    - I would like to easily find my way around the site.
-    - I would like to view the company's social media accounts to see other users experiences.
-
-* As a returning user, 
-    - I would like to find out more information about the courses available to me.
-    - I would like to find out how to contact the company directly, so that I can ask questions.
-    - I would like to connect with the company via their social media.
-
-* As a frequent user, 
-    - I would like to see if there are more advanced courses.
-    - I would like to subscribe to a newsletter in order to receive current news about the site.
-    - I would like to join a community and meet new people.
 
 
 ### Supported Screen Sizes and Browsers
