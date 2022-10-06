@@ -305,8 +305,8 @@ confirmation.html
     ```
 
 ### Test Cases
-## Navigation
-* Desktop
+* Navigation
+    * Desktop
 
     | Feature       | Input         | Output             |
     | ------------- | ------------- | ------------------ |
@@ -315,7 +315,7 @@ confirmation.html
     | Courses       | selected      | opens courses.html |
     | About         | selected      | opens about.html   |
 
-* Mobile
+    * Mobile
 
     | Feature        | Input         | Output                |
     | -------------- | ------------- | --------------------- |
@@ -325,8 +325,8 @@ confirmation.html
     | Courses        | selected      | opens courses.html    |
     | About          | selected      | opens about.html      |
 
-## Footer
-* Desktop and mobile
+* Footer
+    * Desktop and mobile
 
     | Feature       | Input         | Output                 |
     | ------------- | ------------- | ---------------------- |
@@ -335,24 +335,24 @@ confirmation.html
     | TikTok icon   | selected      | opens TikTok account   |
     | Envelope icon | selected      | opens email account    |
 
-## Home Page
-* Desktop and mobile
+* Home Page
+    * Desktop and mobile
 
     | Feature                  | Input         | Output                 |
     | ------------------------ | ------------- | ---------------------- |
     | reboot your career link  | selected      | opens courses.html     |
     | find free bootcamps link | selected      | opens courses.html     |
 
-## Courses Page
-* Desktop and mobile - for each course card
+* Courses Page
+    * Desktop and mobile - for each course card
 
     | Feature                | Input         | Output                                    |
     | ---------------------- | ------------- | ----------------------------------------- |
     | course provider's link | selected      | opens course provider's home page         |
     | social media link      | selected      | opens course provider's social media page |
 
-## About Page
-* Desktop and mobile form
+* About Page
+    * Desktop and mobile form
 
     | Feature          | Input         | Output                                        |
     | ---------------- | ------------- | --------------------------------------------- |
@@ -361,14 +361,29 @@ confirmation.html
     | subscribe button | selected      | opens confirmation.html if name & email valid |
     | envelope icon    | selected      | opens default email account                   |
 
-## Confirmation Page
-* Desktop and mobile
+* Confirmation Page
+    * Desktop and mobile
 
     | Feature          | Input         | Output                                        |
     | ---------------- | ------------- | --------------------------------------------- |
     | navigation items | selected      | as above - see Navigation                     |
     | footer items     | selected      | as above - see Footer                         |
 
+### Testing User Stories
+* As a first time user, 
+    - I would like to view what is available from the site.
+    - I would like to easily find my way around the site.
+    - I would like to view the company's social media accounts to see other users experiences.
+
+* As a returning user, 
+    - I would like to find out more information about the courses available to me.
+    - I would like to find out how to contact the company directly, so that I can ask questions.
+    - I would like to connect with the company via their social media.
+
+* As a frequent user, 
+    - I would like to see if there are more advanced courses.
+    - I would like to subscribe to a newsletter in order to receive current news about the site.
+    - I would like to join a community and meet new people.
 
 
 ### Supported Screen Sizes and Browsers
