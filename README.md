@@ -84,7 +84,7 @@ Navigation bar will be the default responsive Bootstrap one for all pages.
             - flexibility 
             - location 
             - cost
-            - links are supplied for the course provider and their social media account. These links will become orange when hovered over.
+            - links are supplied for the course provider and their social media accounts. These links will become orange when hovered over.
 <h2 align="left"><img src="docs/pictures/courses.jpg"></h2>
 
 * About and Contact page 
@@ -329,19 +329,19 @@ When the user selects an active area of the screen, the following results will b
 	1. Clicking or tapping on the white text *LevelCoder* will
 		- refresh the page
 		- cause no change in text behaviour.
-	1. Clicking or tapping on the white text *Home* will
+	2. Clicking or tapping on the white text *Home* will
 		- refresh the page
 		- cause no change in text behaviour.
-	2. Clicking or tapping on the dark grey text *Courses* will
+	3. Clicking or tapping on the dark grey text *Courses* will
 		- change the text colour to light grey 
 		- take the user to courses.html, the Courses page.
-	3. Clicking or tapping on the dark grey text *About* will:
+	4. Clicking or tapping on the dark grey text *About* will:
 		- change the text colour to light grey 
 		- take the user to about.html, the About and Contact page.
 
 * On the navigation area of mobile devices:
-	1. Tapping on the toggler will open a dropdown menu underneath the *LevelCoder* text. The user will see:
-		- the white *Home*, dark grey *Courses* and *About* texts, in a vertical list 
+	1. Tapping on the toggler will open a dropdown menu underneath the white *LevelCoder* text. The user will see:
+		- the white *Home*, dark grey *Courses* and *About* texts in a vertical list 
 		- toggler border will be thicker and light grey.
 	2. Tapping on the white text *LevelCoder* will:
 		- refresh the page
@@ -351,32 +351,151 @@ When the user selects an active area of the screen, the following results will b
 		- refresh the page
 		- collapse the navigation
 		- cause no change in text behaviour.
-	4. Tapping on the *Courses* text will:
+	4. Tapping on the dark grey *Courses* text will:
 		- change the text colour to light grey
 		- collapse the navigation
 		- take the user to course.html, the Course page.
-	5. Tapping on the *About* text will:
+	5. Tapping on the dark grey *About* text will:
 		- change the text colour to light grey 
 		- collapse the navigation
 		- take the user to about.html, the About page.
 	6. When the navigation dropdown menu is visible, tapping on the toggler again, will collapse it. The togger will retain the thick light grey border until the user taps elsewhere on the screen, or the page is refreshed.
 
-* On the page body and footer of desktop and mobile devices
+* On the page body area of desktop and mobile devices:
 	1. Clicking or tapping the yellow *reboot your career* link will:
 		- change the text colour to white 
 		- take the user to the Courses page.
 	2. Clicking or tapping the green *find free bootcamps* link will:
 		- change the text colour to white 
 		- take the user to the Courses page.
-	3. Clicking or tapping the Twitter *bird* icon will:
+
+* On the footer area of desktop and mobile devices:
+	1. Clicking or tapping the Twitter *bird* footer icon will:
 		- change it's colour to orange 
 		- take the user to the site's Twitter account in another tab.
-	4. Clicking or tapping the LinkedIn *in* icon will:
+	2. Clicking or tapping the LinkedIn *in* footer icon will:
 		- change it's colour to orange 
 		- take the user to the site's LinkedIn account in another tab.
-	5. Clicking or tapping the TikTok *d* icon will:
+	3. Clicking or tapping the TikTok *d* footer icon will:
 		- change it's colour to orange 
 		- take the user to the site's TikTok account in another tab.
+
+#### Courses Page
+Desktop screen:
+
+<h2 align="left"><img src="docs/pictures/courses.jpg"></h2>
+
+Mobile screen:
+
+<h2 align="left"><img src="docs/pictures/courses-mobile.jpg"></h2>
+
+**Site View**
+
+On any page, clicking or tapping *Courses* , on the top navigation bar, will take the user to courses.html, the Courses page.
+The following features of the site are visible to the user.
+
+* Desktop devices:
+	- fixed top horizontal navigation bar, with left-aligned active text ina horizontal list:
+		- *LevelCoder* and *Courses* links in white 
+		- *Home* and *About* in dark grey
+	- hovering the mouse pointer over:
+		- the top navigation bar's dark grey links, will change them to light grey
+		- the footer's white social media icons, will change them to orange
+
+* Mobile devices:
+	- the Bootstrap collapsed navigation with:
+		- the white larger font LevelCoder text on the left  
+		- the Bootstrap *toggler* or *hamburger* button (three small vertical lines stacked on top of each another inside a fine dark grey box) on the right 
+
+* Desktop and mobile devices:
+	- central white heading *Local / Remote Courses* 
+	- underneath the heading are five course cards, arranged as one to three course cards per row, depending on screen size
+	- each card will display:
+       		- course provider logo
+            	- subjects offered 
+            	- aim of the course 
+            	- who can apply, 
+            	- part or full-time 
+            	- duration 
+            	- flexibility 
+            	- location 
+            	- cost
+            	- link for the course provider and an active social media icon
+	- underneath these cards is a thin white line divider
+	- underneath the divider is a central white heading *UK / Remote Courses*
+	- underneath the heading are a further three course cards
+	- bottom horizonal footer with horizontally centrally-aligned white items:
+		- the text *Follow* 
+		- icons for Twitter, LinkedIn and TikToK.
+
+**Site Actions**
+
+When the user selects an active area of the screen, the following results will be seen.
+
+* On the navigation area of desktop devices:
+	1. Clicking or tapping on the white text *LevelCoder* will
+		- cause no change in text behaviour
+		- take the user to index.html, the Home page.
+	2. Clicking or tapping on the dark grey text *Home* will
+		- change the text colour to light grey 
+		- take the user to index.html, the Home page.
+	3. Clicking or tapping on the white text *Courses* will
+		- refresh the page
+		- cause no change in text behaviour.
+	4. Clicking or tapping on the dark grey text *About* will:
+		- change the text colour to light grey 
+		- take the user to about.html, the About and Contact page.
+
+* On the navigation area of mobile devices:
+	1. Tapping on the toggler will open a dropdown menu underneath the white *LevelCoder* text. The user will see:
+		- the dark grey *Home*, white *Courses* and dark grey *About* texts in a vertical list 
+		- toggler border will be thicker and light grey.
+	2. Tapping on the white text *LevelCoder* will:
+		- cause no change in text behaviour
+		- take the user to index.html, the Home page.
+	3. Tapping on the dark grey *Home* text will:
+		- change the text colour to light grey
+		- collapse the navigation
+		- take the user to index.html, the home page.
+	4. Tapping on the white text *Courses* will:
+		- refresh the page
+		- collapse the navigation
+		- cause no change in text behaviour.
+	5. Tapping on the dark grey *About* text will:
+		- change the text colour to light grey 
+		- collapse the navigation
+		- take the user to about.html, the About page.
+	6. When the navigation dropdown menu is visible, tapping on the toggler again, will collapse it. The togger will retain the thick light grey border until the user taps elsewhere on the screen, or the page is refreshed.
+
+* On the page body and footer area of desktop and mobile devices:
+	1. In the last field of each card, clicking or tapping the dark grey overlined *course provider* link will:
+		- change the text colour to orange
+		- take the user to the course provider's home page.
+	2. In the last field of each card, clicking or tapping the dark grey *social media icon* link will:
+		- change the text colour to orange
+		- take the user to the course provider's social media account.
+
+* On the footer area of desktop and mobile devices:
+	1. Clicking or tapping the Twitter *bird* footer icon will:
+		- change it's colour to orange 
+		- take the user to the site's Twitter account in another tab.
+	2. Clicking or tapping the LinkedIn *in* footer icon will:
+		- change it's colour to orange 
+		- take the user to the site's LinkedIn account in another tab.
+	3. Clicking or tapping the TikTok *d* footer icon will:
+		- change it's colour to orange 
+		- take the user to the site's TikTok account in another tab.
+
+#### About and Contact Page
+Desktop screen:
+
+<h2 align="left"><img src="docs/pictures/about.jpg"></h2>
+
+Mobile screen:
+
+<h2 align="left"><img src="docs/pictures/about-mobile.jpg"></h2>
+
+
 
 
 ### Supported Screen Sizes and Browsers

@@ -7,7 +7,7 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
-/*Styles the text for the jumbotro-type section. 
+/*Styles the text for the jumbotron-type section. 
 Text-shadow is added where text runs across patterned background.
 Different coloured text surrounding the main heading gives a friendly feel*/
 .display-4 {
@@ -59,6 +59,8 @@ a {
 
 /*The hero image covers the viewport and has an opaque layer on top.
 This makes the image a bit darker, in order to contrast better with any overlaid text.
+This code came from the Code Institute Whiskey Drop walkthrough lessons.
+https://github.com/Code-Institute-Solutions/whiskey-drop
 */
 .hero-container {
     height: 100vh;
