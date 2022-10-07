@@ -42,7 +42,7 @@ The site is designed to be responsive and accessible on a range of devices, maki
 ## Design
 * Colour Scheme
     - Bootstrap's own white (#ffffff) text on dark grey (#212529) scheme is used for the navigation and footer sections.
-    - Colours white (#ffffff)and dark grey (#212529) are used for text.
+    - Colours white (#ffffff) and dark grey (#212529) are used for text.
     - Orange (#ff8c00) is used as an extra indicator when hovering over links.
 * Typography
     - For the home and about pages, Roboto font is used for the main headings for good readability and text contrast when required. This was chosen for best readability. If this font is unavailable, san serif is used as a fallback.
@@ -51,7 +51,7 @@ The site is designed to be responsive and accessible on a range of devices, maki
     - On the courses page, each course is listed in it's own Bootstrap card, which features the providers own logo. This is supplied in order to build up trust and to ensure the users know which provider they are directed to from the site.
 
 ## Wireframes
-See the original design as a [wireframe PDF](docs/wireframe/wireframe.pdf). It includes both desktop and mobile versions.
+See the site design as a [wireframe PDF](docs/wireframe/wireframe.pdf). It includes both desktop and mobile versions.
 
 ## Features
 This website will initially consist of three visible pages (Home, Courses, About) and one hidden (Confirmation for subscription)
@@ -59,18 +59,17 @@ This website will initially consist of three visible pages (Home, Courses, About
 ### Navigation
 Navigation bar will be the default responsive Bootstrap one for all pages.
 * Desktops 
-    - the menu items: LevelCoder branding, Home, Courses, About will be inline and fixed across the top of the screen. The current page will have white text, while others will be in grey.
+    - [the menu](docs/pictures/nav-desktop.jpg) items: LevelCoder branding, Home, Courses, About will be inline and fixed across the top of the screen. The current page will have white text, while others will be in grey.
     - LevelCoder and Home will navigate to index.html, Courses to courses.html and About to about.html.
-<h2 align="left"><img src="docs/pictures/nav-desktop.jpg"></h2>
 
-* Mobiles - will feature the collapsed Burger navigation, which has a dropdown menu for each of the visible pages and again, the current page will have white text, while others will be in grey.
-<h2 align="left"><img src="docs/pictures/nav-mobile.jpg"></h2>
+* Mobiles 
+    - will feature the collapsed navigation with a toggler, which has a [dropdown menu](docs/pictures/nav-mobile.jpg) for each of the visible pages and again, the current page will have white text, while others will be in grey.
 
 ### Pages
 * Home page - the user will introduced to the site and tempted to explore further. It will feature:
     - Coloured text, which introduces the user to the facilities of the site.
     - A hero image with opacity, to increase the contrast between the background and coloured text. 
-    - Some texts will have active links, indicated with overlines (mainly for mobile viewing), to link to the appropriate pages. When these links are hovered over, they will change to white. Links for pages not yet built will be static coloured text. 
+    - Some texts will have [active links](home-links.jpg), indicated with overlines (mainly for mobile viewing), to link to the appropriate pages. When these links are hovered over, they will change to white. Links for pages not yet built will be static coloured text. 
 <h2 align="left"><img src="docs/pictures/home-desktop.jpg"></h2>
 
 * Courses page - here the user may find courses at all levels to further their objectives. 
@@ -85,11 +84,10 @@ Navigation bar will be the default responsive Bootstrap one for all pages.
             - flexibility 
             - location 
             - cost
-        - Links are supplied for the course provider and their social media account. These links will become orange when hovered over.
+            - links are supplied for the course provider and their social media account. These links will become orange when hovered over.
 <h2 align="left"><img src="docs/pictures/courses.jpg"></h2>
 
 * About and Contact page 
-<h2 align="left"><img src="docs/pictures/about.jpg"></h2>
 The combined About and Contact page will be composed of:
 
 - Information about the site and why it was created.
@@ -99,16 +97,15 @@ The combined About and Contact page will be composed of:
     - email address
     - select the Subscribe button to sign up to a regular email newsletter
     Both will be checked by the standard Bootstrap validation
-    - Email link will be accessed via the envelope icon on the footer
-<h2 align="left"><img src="docs/pictures/about-footer.jpg"></h2>
+    - Email link will be accessed via the [envelope icon](docs/pictures/about-footer.jpg) on the footer
+<h2 align="left"><img src="docs/pictures/about.jpg"></h2>
 
 * Confirmation page is only visible on successful sign up to the newsletter and will contain the standard navigation and footer.
 <h2 align="left"><img src="docs/pictures/confirmation.jpg"></h2>
 
 ### Footer
-Footers will feature:
+[Footers](docs/pictures/footer.jpg) will feature:
 * Social media links for Twitter, LinkedIn, TikTok on all pages, accessed via the appropriate icon. When hovered over they will change to orange.
-<h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
 
 * Email us facility accessed via the envelope icon, but only on the About page
 
@@ -137,6 +134,7 @@ After asking the advice of the LinkedIn and codebar communities, further feature
 * Stock photos from [Unsplash](https://unsplash.com).
 
 ## Testing
+Testing and validation was carried out on the **Chrome** browser only, though the site was viewed through others for a quick check.
 
 ### Code Validation
 * HTML - No errors or warnings were detected by W3C Validation for pages:
@@ -151,11 +149,7 @@ After asking the advice of the LinkedIn and codebar communities, further feature
 <h2 align="left"><img src="docs/pictures/test-css.jpg"></h2>
 
 ### Lighthouse
-Lighthouse is an automated tool for improving the quality of web page. It checks the current webpage for performance, accessibility, best practices and SEO. It can be accessed from the Chrome Developer Tools: 
-<h2 align="left"><img src="docs/pictures/dev-tools.jpg"></h2>
-<h2 align="left"><img src="docs/pictures/lighthouse.jpg"></h2>
-
-A summary for the performance of each page is provided:
+Lighthouse is an automated tool for improving the quality of web page. It checks the current webpage for performance, accessibility, best practices and SEO. A summary for the performance of each page is provided here:
 
 index.html
 
@@ -260,7 +254,7 @@ confirmation.html
         padding-bottom: 1.5rem;
     }
     ```
-9. On the about page, after clicking Subscribe button, the page refreshes. Would be better to give the user some  confirmation. Normally the [POST method](https://css-tricks.com/snippets/html/form-submission-new-window/) is used, but in this case there is nowhere to send the data and this generates an error. Instead, my mentor suggested using  the [GET method](https://webmasters.stackexchange.com/questions/7958/can-i-post-to-a-new-window-that-i-want-to-open-up)
+9. On the about page, after clicking Subscribe button, the page refreshes. Would be better to give the user some  confirmation. Normally the [POST method](https://css-tricks.com/snippets/html/form-submission-new-window/) is used, but in this case there is nowhere to send the data and this generates an error. Instead, used the [GET method](https://webmasters.stackexchange.com/questions/7958/can-i-post-to-a-new-window-that-i-want-to-open-up)
     - Implemented by opening another page using the form method of GET:
     ```html
     <form class="row g-5" method="GET" action="confirmation.html"></form>
@@ -290,77 +284,135 @@ confirmation.html
     ```
 
 ### Test Cases
-* Navigation
-    * Desktop
+#### Home Page
+Desktop screen:
 
-    | Feature       | Input         | Output             |
-    | ------------- | ------------- | ------------------ |
-    | LevelCoder    | selected      | opens index.html   |
-    | Home          | selected      | opens index.html   |
-    | Courses       | selected      | opens courses.html |
-    | About         | selected      | opens about.html   |
+<h2 align="left"><img src="docs/pictures/home-desktop.jpg"></h2>
 
-    * Mobile
+Mobile screen:
 
-    | Feature        | Input         | Output                |
-    | -------------- | ------------- | --------------------- |
-    | Burger icon    | selected      | opens dropdown menu   |
-    | LevelCoder     | selected      | opens index.html      |
-    | Home           | selected      | opens index.html      |
-    | Courses        | selected      | opens courses.html    |
-    | About          | selected      | opens about.html      |
+<h2 align="left"><img src="docs/pictures/home-mobile.jpg"></h2>
 
-* Footer
-    * Desktop and mobile
 
-    | Feature       | Input         | Output                 |
-    | ------------- | ------------- | ---------------------- |
-    | Twitter icon  | selected      | opens Twitter account  |
-    | LinkedIn icon | selected      | opens LinkedIn account |
-    | TikTok icon   | selected      | opens TikTok account   |
-    | Envelope icon | selected      | opens email account    |
+**Site View**
 
-* Home Page
-    * Desktop and mobile
+On any page, clicking or tapping *Home* or the white larger font *LevelCoder* text, on the top navigation bar, will take the user to index.html, the Home page.
+The following features of the site are visible to the user.
 
-    | Feature                  | Input         | Output                 |
-    | ------------------------ | ------------- | ---------------------- |
-    | reboot your career link  | selected      | opens courses.html     |
-    | find free bootcamps link | selected      | opens courses.html     |
+* Desktop devices:
+	- fixed top horizontal navigation bar, with left-aligned active text ina horizontal list:
+		- *LevelCoder* and *Home* links in white 
+		- *Courses* and *About* in dark grey
+	- hovering the mouse pointer over:
+		- the top navigation bar's dark grey links, will change them to light grey
+		- the coloured text links, will change the text colour to white
+		- the footer's white social media icons, will change them to orange
 
-* Courses Page
-    * Desktop and mobile - for each course card
+* Mobile devices:
+	- the Bootstrap collapsed navigation with:
+		- the white larger font LevelCoder text on the left  
+		- the Bootstrap *toggler* or *hamburger* button (three small vertical lines stacked on top of each another inside a fine dark grey box) on the right 
 
-    | Feature                | Input         | Output                                    |
-    | ---------------------- | ------------- | ----------------------------------------- |
-    | course provider's link | selected      | opens course provider's home page         |
-    | social media link      | selected      | opens course provider's social media page |
+* Desktop and mobile devices:
+	- central white heading *Do you want to... explore a tech career here, in the West Midlands?* 
+	- six coloured phrases surrounding the white heading 
+	- two phrases with an overline, indicating active links
+	- bottom horizonal footer with horizontally centrally-aligned white items:
+		- the text *Follow* 
+		- icons for Twitter, LinkedIn and TikToK.
 
-* About Page
-    * Desktop and mobile form
+**Site Actions**
 
-    | Feature          | Input         | Output                                        |
-    | ---------------- | ------------- | --------------------------------------------- |
-    | name input box   | typed text    | n/a                                           |
-    | email input box  | typed text    | n/a                                           |
-    | subscribe button | selected      | opens confirmation.html if name & email valid |
-    | envelope icon    | selected      | opens default email account                   |
+When the user selects an active area of the screen, the following results will be seen.
 
-* Confirmation Page
-    * Desktop and mobile
+* On the navigation area of desktop devices:
+	1. Clicking or tapping on the white text *LevelCoder* will
+		- refresh the page
+		- cause no change in text behaviour.
+	1. Clicking or tapping on the white text *Home* will
+		- refresh the page
+		- cause no change in text behaviour.
+	2. Clicking or tapping on the dark grey text *Courses* will
+		- change the text colour to light grey 
+		- take the user to courses.html, the Courses page.
+	3. Clicking or tapping on the dark grey text *About* will:
+		- change the text colour to light grey 
+		- take the user to about.html, the About and Contact page.
 
-    | Feature          | Input         | Output                                        |
-    | ---------------- | ------------- | --------------------------------------------- |
-    | navigation items | selected      | as above - see Navigation                     |
-    | footer items     | selected      | as above - see Footer                         |
+* On the navigation area of mobile devices:
+	1. Tapping on the toggler will open a dropdown menu underneath the *LevelCoder* text. The user will see:
+		- the white *Home*, dark grey *Courses* and *About* texts, in a vertical list 
+		- toggler border will be thicker and light grey.
+	2. Tapping on the white text *LevelCoder* will:
+		- refresh the page
+		- collapse the navigation
+		- cause no change in text behaviour.
+	3. Tapping on the white text *Home* will:
+		- refresh the page
+		- collapse the navigation
+		- cause no change in text behaviour.
+	4. Tapping on the *Courses* text will:
+		- change the text colour to light grey
+		- collapse the navigation
+		- take the user to course.html, the Course page.
+	5. Tapping on the *About* text will:
+		- change the text colour to light grey 
+		- collapse the navigation
+		- take the user to about.html, the About page.
+	6. When the navigation dropdown menu is visible, tapping on the toggler again, will collapse it. The togger will retain the thick light grey border until the user taps elsewhere on the screen, or the page is refreshed.
+
+* On the page body and footer of desktop and mobile devices
+	1. Clicking or tapping the yellow *reboot your career* link will:
+		- change the text colour to white 
+		- take the user to the Courses page.
+	2. Clicking or tapping the green *find free bootcamps* link will:
+		- change the text colour to white 
+		- take the user to the Courses page.
+	3. Clicking or tapping the Twitter *bird* icon will:
+		- change it's colour to orange 
+		- take the user to the site's Twitter account in another tab.
+	4. Clicking or tapping the LinkedIn *in* icon will:
+		- change it's colour to orange 
+		- take the user to the site's LinkedIn account in another tab.
+	5. Clicking or tapping the TikTok *d* icon will:
+		- change it's colour to orange 
+		- take the user to the site's TikTok account in another tab.
 
 
 ### Supported Screen Sizes and Browsers
-Bootstrap v5.2 was used for building the site - see the [supported browsers and devices](https://getbootstrap.com/docs/5.2/getting-started/browsers-devices/)
 
-See the [six default breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/) provided by Bootstrap for responsive building.
+Bootstrap v5.2 was used for building the site - see the [supported browsers and devices](https://getbootstrap.com/docs/5.2/getting-started/browsers-devices/).
+* Bootstrap supports the latest, stable releases of all major browsers and platforms:
+    - Chrome >= 60
+    - Firefox >= 60
+    - Firefox ESR
+    - iOS >= 12 (see bug 10 for issues)
+    - Safari >= 12 (see bug 10 for issues)
+    - Explorer <= 11
+    - Edge - latest version
 
-Testing and validation was carried out on the Chrome browser only.
+Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, and Firefox for Linux, though they are not officially supported. Proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
+
+* Devices supported:
+    - Mac
+    - Windows
+    - Android
+    - iOS
+
+* See the [six default breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/) provided by Bootstrap for responsive building. Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device. 
+
+    | Breakpoint               | Class          | Dimensions |
+    | ------------------------ | -------------- | ---------- |
+    | Extra small              | none           | <576px     |
+    | Small                    | sm             | ≥576px     |
+    | Medium                   | md             | ≥768px     |
+    | Large                    | lg             | ≥992px     |
+    | Extra large              | xl             | ≥1200px    |
+    | Extra extra large        | xxl            | ≥1400px    |
+
+Classes -md- and -lg- were specially defined for the courses page, where Bootstrap cards were utilised. Using these Bootstrap breakpoint classes helped to ensure smoother wrapping of the rows when different screen sizes were in operation.
+
+
 
 ## Deployment
 
