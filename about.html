@@ -13,10 +13,15 @@
     <script src="https://kit.fontawesome.com/7c6e646adf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>LevelCoder | Connect with us | Join our tech community</title>
-    <script type="text/javascript">
-        function disableBack() { window.history.forward(); }
+    <!--Script to disable back button after form submission. Stops user from viewing form data again.-->
+    <script>
+        function disableBack() {
+            window.history.forward();
+        }
         setTimeout("disableBack()", 0);
-        window.onunload = function () { null };
+        window.onunload = function () {
+            null
+        };
     </script>
 </head>
 
@@ -138,7 +143,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>    
+    </script>
 </body>
 
 </html>

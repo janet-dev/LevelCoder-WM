@@ -69,7 +69,7 @@ Navigation bar will be the default responsive Bootstrap one for all pages.
 * Home page - the user will introduced to the site and tempted to explore further. It will feature:
     - Coloured text, which introduces the user to the facilities of the site.
     - A hero image with opacity, to increase the contrast between the background and coloured text. 
-    - Some texts will have [active links](home-links.jpg), indicated with overlines (mainly for mobile viewing), to link to the appropriate pages. When these links are hovered over, they will change to white. Links for pages not yet built will be static coloured text. 
+    - Some texts will have [active links](docs/pictures/home-links.jpg), indicated with overlines (mainly for mobile viewing), to link to the appropriate pages. When these links are hovered over, they will change to white. Links for pages not yet built will be static coloured text. 
 <h2 align="left"><img src="docs/pictures/home-desktop.jpg"></h2>
 
 * Courses page - here the user may find courses at all levels to further their objectives. 
@@ -199,15 +199,15 @@ confirmation.html
 <h2 align="left"><img src="docs/pictures/confirm-summary-mobile.jpg"></h2>
 
 ### Bugs Fixed
-1. To be consistant, replaced all named and rgb colours with hex numbers in style.css.
-2. On every page, there was a white space visible below the hero image. This was because the HTML height was greater than the viewport.
+1. To be consistant, [replaced all named and rgb colours with hex numbers](docs/pictures/bug-colour-hex.png) in style.css.
+2. On every page, there was a [white space visible below the hero image](docs/pictures/bug-html-height.png). This was because the HTML height was greater than the viewport.
     - Fixed by making the HTML height the same as the viewport
     ```html
     html { 
         height: 100vh;
     }
     ```
-3. On the courses page, the Bootstrap were overlapping on some screen sizes wilth the following code:
+3. On the courses page, the Bootstrap [cards were overlapping](docs/pictures/bug-overlap.png) on some screen sizes wilth the following code:
     ```html
     <div class="row">
         <div class="col-12 col-md-6 col-lg-3"></div>
@@ -221,7 +221,7 @@ confirmation.html
     ```
     See [Bootstrap cards](https://getbootstrap.com/docs/5.0/components/card/)
      and [Bootstrap grid.](https://getbootstrap.com/docs/5.0/layout/grid/#row-columns)
-4. On the courses page, the cards were not centered in their columns.
+4. On the courses page, the [cards were not centered](docs/pictures/bug-card-not-centre.png) in their columns.
     - Fixed by displaying as flexbox and centering the contents
     ```css
     .col {
@@ -234,17 +234,17 @@ confirmation.html
     ```html
     <div class="card h-100">
     ```
-6. On the courses page, there was no space between the navigation bar or footer, and the cards.
+6. On the courses page, there was no space between the [navigation bar](docs/pictures/bug-no-gap-fixed-navbar.png) or [footer](docs/pictures/bug-no-gap-footer-nav.png), and the cards.
     - Fixed by adding some padding to the page container
     ```css
     .courses-container {
     min-height: 100vh;
     height: auto;
-    padding-top: 4rem;
+    padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     }
     ```
-7. On the about page in mobile device mode, there was no space between the text and navigation bar, and between the Subscribe button and footer.
+7. On the about page in mobile device mode, there was no space between the [text and navigation bar](docs/pictures/bug-no-gap-about-mobile.png), and between the [Subscribe button and footer](docs/pictures/bug-no-gap-about-btn.png).
     - Fixed by adding some padding
     ```css
     .about-h2 {
@@ -269,14 +269,14 @@ confirmation.html
         padding-bottom: 1.5rem;
     }
     ```
-9. On the about page, after clicking Subscribe button, the page refreshes. Would be better to give the user some  confirmation. Normally the [POST method](https://css-tricks.com/snippets/html/form-submission-new-window/) is used, but in this case there is nowhere to send the data and this generates an error. Instead, used the [GET method](https://webmasters.stackexchange.com/questions/7958/can-i-post-to-a-new-window-that-i-want-to-open-up)
+9. On the about page, after clicking Subscribe button, the page refreshes. Would be better to give the user some  confirmation. Normally the [POST method](https://css-tricks.com/snippets/html/form-submission-new-window/) is used, but in this case there is nowhere to send the data and this [generates an error](docs/pictures/bug-post.jpg). Instead, used the [GET method](https://webmasters.stackexchange.com/questions/7958/can-i-post-to-a-new-window-that-i-want-to-open-up)
     - Implemented by opening another page using the form method of GET:
     ```html
     <form class="row g-5" method="GET" action="confirmation.html"></form>
     ```
 10. On the *About* page, users are able to retrieve data from subscription form after submission by using the *back* button. This still happens if the code `method="GET" action="confirmation.html` is removed from the form element. Here the *Subscribe* button will default to Bootstrap submit actions, where the page refreshes and the data is cleared from the fields. By using the *back* button, the user can see the data.
     - This is a known issue which can be prevented by a Javascript script supplied by [Clue Mediator](https://www.cluemediator.com/how-to-disable-the-browser-back-button-using-javascript). It is placed in the *head* section of the HTML file where the user is being directed **from**, in this case the *about.html*. Inserted it under the *title* element:
-    ```
+    ```html
     <head>
         
         <title>About Page</title>
@@ -288,17 +288,17 @@ confirmation.html
 
     </head>
     ```
-11. Flex column heading in courses.html was not stretching across the whole screen and forcing the course cards onto the next row. 
+11. Flex column heading in courses.html was [not stretching across the whole screen](docs/pictures/bug-full-width.jpg) and forcing the course cards onto the next row. 
     - Solved by watching this [CSS Flexbox Tutorial](https://www.youtube.com/watch?v=M1yD8GVpLnQ)
-    ```
+    ```css
     	.full-width {
             flex-basis: 100%;
             text-align: center;
             z-index: 0;
     }
     ```
-10. During the initial Lighthouse audit, it was suggested to use .webp images, so all images where changed from .jpg/.png format. Unfortunately not all browsers can display these .webp. Users with older devices may not be able to upgrade to the latest browsers. Found two devices unable to view .webp images:
-    - MacBook Pro running macOS Catalina 10.15.5 with Safari 13.1.1
+12. During the initial Lighthouse audit, it was suggested to use .webp images, so all images where changed from .jpg/.png format. Unfortunately not all browsers can display these .webp. Users with older devices may not be able to upgrade to the latest browsers. Found two devices [unable to view](docs/pictures/bug-safari-webp-missing.png) .webp images:
+    - MacBook Pro running [macOS Catalina](docs/pictures/bug-safari-bg-grey.png) 10.15.5 with Safari 13.1.1
     - iPhone SE running iOS 13.6.1 
     - Fixed by [including a fallback](https://css-tricks.com/using-webp-images/) .jpg version of the .webp image:
     ```html
@@ -309,20 +309,20 @@ confirmation.html
             width="358" height="200">
     </picture>
     ```
-11. Initial Lighthouse audit, showed that image sizes were not stated in the HTML, to prevent [layout shifts](https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions) when a page is loading.
+13. Initial Lighthouse audit, showed that image sizes were not stated in the HTML, to prevent [layout shifts](https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions) when a page is loading.
     - Fixed by including the width and height of the image - see the previous bug's code `width="358" height="200"`.
-12. During the W3C validation of the about page, an error was raised because the email query had spaces in it.
+14. During the W3C validation of the about page, an error was raised because the [email query had spaces](docs/pictures/bug-mail-us.jpg) in it.
     - Fixed by removing spaces and inserting underscore where appropriate:
     ```html
-    <a href="mailto:janet.d.coder@gmail.com?subject=***Mail_via_LevelCoder***&body=Dear_Janet,"
-        target="_blank" rel="noopener noreferrer">
+    <a href="mailto:levelcoder.wm@gmail.com?subject=***Mail_via_LevelCoder_WestMids***&body=Dear_LevelCoder,"
+                    target="_blank" rel="noopener noreferrer">
         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
         <span class="sr-only">Email LevelCoder</span>
     </a>
     ```
-13. Some of the images were being compressed when the screen size decreased.
+15. Some of the [images were still being compressed](docs/pictures/bug-image-compress.jpg) when the screen size decreased.
     - Used the following CSS code from [Stackoverflow](https://stackoverflow.com/questions/16177707/avoid-stretch-on-image-css) to try and minimise this:
-    ```
+    ```css
 	picture {
 	    display: block;
 	    margin: 0px auto;
@@ -655,8 +655,7 @@ When the user selects an active area of the screen, the following results will b
             <h2 align="left"><img src="docs/pictures/form-check-min.jpg"></h2>
 					
 
-	Note: 	The default HTML valid email checker, whilst it is comprehensive, it does allow for non-standard email formats. In today's real world this should not be relied on.
-		For further information see the specification published by [WHATWG](https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address)
+	Note: 	The default HTML valid email checker, whilst it is comprehensive, it does allow for non-standard email formats. In today's real world this should not be relied on. For further information see the specification published by [WHATWG](https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address)
 
 
 * On the footer area of desktop and mobile devices:
