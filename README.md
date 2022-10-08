@@ -133,6 +133,7 @@ After asking the advice of the LinkedIn and codebar communities, further feature
 * Icon library and toolkit from [Font Awesome](https://fontawesome.com/).
 * Online photo editor from [Pixlr](https://pixlr.com/x/).
 * Stock photos from [Unsplash](https://unsplash.com).
+* Snip and Sketch from [Microsoft](https://apps.microsoft.com/store/detail/snipping-tool/9MZ95KL8MR0L?hl=en-gb&gl=gb)
 
 ## Testing
 Testing and validation was carried out on the **Chrome** browser only, though the site was viewed through others for a quick check.
@@ -192,10 +193,10 @@ about.html
 
 confirmation.html
 
-- Desktop - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-desktop-2.pdf) for more information.
+- Desktop - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-desktop.pdf) for more information.
 <h2 align="left"><img src="docs/pictures/confirm-summary-desktop.jpg"></h2>
 
-- Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-mobile-2.pdf) for more information.
+- Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-mobile.pdf) for more information.
 <h2 align="left"><img src="docs/pictures/confirm-summary-mobile.jpg"></h2>
 
 ### Bugs Fixed
@@ -297,7 +298,7 @@ confirmation.html
             z-index: 0;
     }
     ```
-12. During the initial Lighthouse audit, it was suggested to use .webp images, so all images where changed from .jpg/.png format. Unfortunately not all browsers can display these .webp. Users with older devices may not be able to upgrade to the latest browsers. Found two devices [unable to view](docs/pictures/bug-safari-webp-missing.png) .webp images:
+12. During the [initial Lighthouse audit](docs/pictures/bug-webp.jpg), it was suggested to use .webp images, so all images where changed from .jpg/.png format. Unfortunately not all browsers can display these .webp. Users with older devices may not be able to upgrade to the latest browsers. Found two devices [unable to view](docs/pictures/bug-safari-webp-missing.png) .webp images:
     - MacBook Pro running [macOS Catalina](docs/pictures/bug-safari-bg-grey.png) 10.15.5 with Safari 13.1.1
     - iPhone SE running iOS 13.6.1 
     - Fixed by [including a fallback](https://css-tricks.com/using-webp-images/) .jpg version of the .webp image:
@@ -309,7 +310,7 @@ confirmation.html
             width="358" height="200">
     </picture>
     ```
-13. Initial Lighthouse audit, showed that image sizes were not stated in the HTML, to prevent [layout shifts](https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions) when a page is loading.
+13. [Initial Lighthouse audit](docs/pictures/bug-no-ht-wd.jpg), showed that image sizes were not stated in the HTML, to prevent [layout shifts](https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions) when a page is loading.
     - Fixed by including the width and height of the image - see the previous bug's code `width="358" height="200"`.
 14. During the W3C validation of the about page, an error was raised because the [email query had spaces](docs/pictures/bug-mail-us.jpg) in it.
     - Fixed by removing spaces and inserting underscore where appropriate:
@@ -714,10 +715,11 @@ the following features of the site are visible to the user.
 
 **Site Actions**
 
-* Note: The form clears when the user is taken to the *Confirmation* page, but if the *back* button is used, the data will be seen in the form. 
-In reality, extra security would be built into the form to prevent this. See bug xx.
-
 When the user selects an active area of the screen, the following results will be seen.
+
+* The first check to do, after the form submission has taken the user to the *Confirmation* page, is to click or tap the *back* button on the browser (see Bug 10.):
+	 - the user should not be able to use the *back* button
+	 - the user can only visit the other pages by using the navigation
 
 * On the navigation area of desktop devices:
 	1. Clicking or tapping on the white text *LevelCoder* will
@@ -821,13 +823,7 @@ A blue button should appear to click: _Make Public_,
 
 Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal.
 
 ### GitHub Pages
 
@@ -837,9 +833,9 @@ In Gitpod you have superuser security privileges by default. Therefore you do no
 A huge thank you to the following people and organisations, because without you, the website would not have been produced in it's present form.
 
 ### From the Course
-Rachel Furlong - EKC DigitalLearn Course Facilitator
+Rachel Furlong - [EKC DigitalLearn](https://ekcgroup.ac.uk/business-units/ekc-digitallearn) Course Facilitator
  
-Rohit Sharma - Code Institute Mentor
+Rohit Sharma - [Code Institute](https://codeinstitute.net/) Mentor
 
 Sample README from [Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME)
 
@@ -850,4 +846,33 @@ Markdown Cheatsheet from [Adam Pritchard](https://github.com/adam-p/markdown-her
 Woman in front of a lit wall by [Josh Hild](https://unsplash.com/@joshhild) on Unsplash
 
 Selfridges Building in Birmingham by [Christian Holzinger](https://unsplash.com/@pixelatelier) on Unsplash
+
+Course provider icons -  see the [Courses page](https://janet-dev.github.io/ci-milestone-project-1/courses.html)
+
+### Code
+Many of the references have been embedded as links throughout this document and indicated by the active blue text.
+
+[Bootstrap 5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+
+[Creating a hero image with opaque layer](https://github.com/Code-Institute-Solutions/whiskey-drop) by Code Institute's Whiskey Drop tutorial
+
+[How to create a Jumbotron in Bootstrap 5](https://www.studytonight.com/bootstrap/how-to-create-a-jumbotron-in-bootstrap-5) by Study Tonight
+
+[Bootstrap 5 gutters : Space between columns](https://cutekit.net/2021/02/15/bootstrap-5-gutters-space-between-columns/) by Miradontsoa Andrianarison
+
+[HTML meta Tag](https://www.w3schools.com/tags/tag_meta.asp) by W3Schools
+
+[How to Make One Flex Item Full-Width - CSS Flexbox Tutorial](https://www.youtube.com/watch?v=M1yD8GVpLnQ) by Front End Beginners
+
+[Simple Styles for hr's](https://css-tricks.com/examples/hrs/) by CSS Tricks
+
+[Using WebP Images](https://css-tricks.com/using-webp-images/) by Jeremy Wagner
+
+[Avoid stretch on image css](https://stackoverflow.com/questions/16177707/avoid-stretch-on-image-css) solution by [somdow](https://stackoverflow.com/users/824904/somdow)
+
+[Form Submission Opens New Tab/Window](https://css-tricks.com/snippets/html/form-submission-new-window/) by Chris Coyier
+
+[Can I POST to a new window that I want to open up?](https://webmasters.stackexchange.com/questions/7958/can-i-post-to-a-new-window-that-i-want-to-open-up) solution by [Bavi_H](https://webmasters.stackexchange.com/users/3108/bavi-h)
+
+[Clue Mediator](https://www.cluemediator.com/how-to-disable-the-browser-back-button-using-javascript)
 
