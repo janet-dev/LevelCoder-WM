@@ -331,6 +331,19 @@ confirmation.html
 	    height: auto;
     }
     ```
+16. Ran Lighthouse again for About page - performance was 86% for mobiles. Had an issue with an [unload event](docs/pictures/bug-unload.jpg). 
+	- Solved issue by [replacing unload with pagehide](https://web.dev/bfcache/?utm_source=lighthouse&utm_medium=devtools#never-use-the-unload-event). Now performance is 98%.
+	```html
+	<script>
+        function disableBack() {
+            window.history.forward();
+        }
+        setTimeout("disableBack()", 0);
+        window.onpagehide = function () {
+            null
+        };
+    </script>
+	```
 
 ### Test Cases
 #### Home Page
