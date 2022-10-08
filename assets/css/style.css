@@ -136,6 +136,13 @@ hr {
     text-shadow: 1px 1px #212529;
 }
 
+picture {
+    display: block;
+    margin: 0px auto;
+    width: initial;
+    height: auto;
+}
+
 .card-link {
     color: #212529;
     font-weight: bolder;

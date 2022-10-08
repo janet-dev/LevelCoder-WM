@@ -125,6 +125,7 @@ After asking the advice of the LinkedIn and codebar communities, further feature
 * Debugging assisted by [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/).
 * Version control integrated into Gitpod from [Git](https://git-scm.com/).
 * Project deployment provided by [GitHub Pages](https://pages.github.com/).
+* Online cross browser and device testing by [LambdaTest](https://www.lambdatest.com/).
 * HTML validation from [W3C](https://validator.w3.org/#validate_by_input).
 * CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/#validate_by_input).
 * Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
@@ -135,6 +136,20 @@ After asking the advice of the LinkedIn and codebar communities, further feature
 
 ## Testing
 Testing and validation was carried out on the **Chrome** browser only, though the site was viewed through others for a quick check.
+
+As a quick check viewed different browsers on other devices via [LambdaTest](https://www.lambdatest.com/), a cross browser online testing tool.
+
+Performed a visual check on the following [devices and browsers](docs/pictures/lambda-log.jpg):
+
+| Browser       | OS             | Device        | Result        |
+| ------------- | -------------- | ------------- | ------------- |
+| Safari        | [iOS 10.3](docs/pictures/lambda-safari-mobile-log.jpg)       | iPhone 5      | OK            | 
+| Safari        | [macOS Catalina](docs/pictures/lambda-safari-desktop-log.jpg) | Desktop       | OK            |
+| Opera         | [Android 11.0](docs/pictures/lambda-opera-mobile-log.jpg)   | Galaxy Tab A7 | OK            |
+| Opera         | [Windows 10](docs/pictures/lambda-opera-desktop-log.jpg)     | Desktop       | OK            |
+| Chromium      | [iOS 13.3](docs/pictures/lambda-chromium-mobile-log.jpg)       | iPhone 11     | OK            |
+| Chrome        | [macOS Mojave](docs/pictures/lambda-chrome-desktop-log.jpg)   | Desktop       | OK            |
+
 
 ### Code Validation
 * HTML - No errors or warnings were detected by W3C Validation for pages:
@@ -225,7 +240,7 @@ confirmation.html
     .courses-container {
     min-height: 100vh;
     height: auto;
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-bottom: 1.5rem;
     }
     ```
@@ -250,7 +265,7 @@ confirmation.html
     .courses-container {
         min-height: 100vh;
         height: auto;
-        padding-top: 5rem;
+        padding-top: 4rem;
         padding-bottom: 1.5rem;
     }
     ```
@@ -258,6 +273,17 @@ confirmation.html
     - Implemented by opening another page using the form method of GET:
     ```html
     <form class="row g-5" method="GET" action="confirmation.html"></form>
+    ```
+10. Form not clearing
+
+11. Flex column heading in courses.html was not stretching across the whole screen and forcing the course cards onto the next row. 
+    - Solved by watching this [CSS Flexbox Tutorial](https://www.youtube.com/watch?v=M1yD8GVpLnQ)
+    ```
+    	.full-width {
+            flex-basis: 100%;
+            text-align: center;
+            z-index: 0;
+    }
     ```
 10. During the initial Lighthouse audit, it was suggested to use .webp images, so all images where changed from .jpg/.png format. Unfortunately not all browsers can display these .webp. Users with older devices may not be able to upgrade to the latest browsers. Found two devices unable to view .webp images:
     - MacBook Pro running macOS Catalina 10.15.5 with Safari 13.1.1
@@ -300,18 +326,28 @@ On any page, clicking or tapping *Home* or the white larger font *LevelCoder* te
 The following features of the site are visible to the user.
 
 * Desktop devices:
-	- fixed top horizontal navigation bar, with left-aligned active text ina horizontal list:
+	- fixed top horizontal navigation bar, with left-aligned active text in a horizontal list:
 		- *LevelCoder* and *Home* links in white 
 		- *Courses* and *About* in dark grey
+
+        <h2 align="left"><img src="docs/pictures/nav-desktop.jpg"></h2>
+
 	- hovering the mouse pointer over:
 		- the top navigation bar's dark grey links, will change them to light grey
 		- the coloured text links, will change the text colour to white
+
+        <h2 align="left"><img src="docs/pictures/home-links.jpg"></h2>
+
 		- the footer's white social media icons, will change them to orange
+
+        <h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
 
 * Mobile devices:
 	- the Bootstrap collapsed navigation with:
 		- the white larger font LevelCoder text on the left  
 		- the Bootstrap *toggler* or *hamburger* button (three small vertical lines stacked on top of each another inside a fine dark grey box) on the right 
+
+        <h2 align="left"><img src="docs/pictures/nav-mobile.jpg"></h2>
 
 * Desktop and mobile devices:
 	- central white heading *Do you want to... explore a tech career here, in the West Midlands?* 
@@ -452,6 +488,7 @@ When the user selects an active area of the screen, the following results will b
 		- toggler border will be thicker and light grey.
 	2. Tapping on the white text *LevelCoder* will:
 		- cause no change in text behaviour
+        - collapse the navigation
 		- take the user to index.html, the Home page.
 	3. Tapping on the dark grey *Home* text will:
 		- change the text colour to light grey
@@ -495,8 +532,226 @@ Mobile screen:
 
 <h2 align="left"><img src="docs/pictures/about-mobile.jpg"></h2>
 
+**Site View**
+
+On any page, clicking or tapping *About*, on the top navigation bar, will take the user to about.html, the About page.
+The following features of the site are visible to the user.
+
+* Desktop devices:
+	- fixed top horizontal navigation bar, with left-aligned active text ina horizontal list:
+		- *LevelCoder* and *About* links in white 
+		- *Home* and *Courses* in dark grey
+	- hovering the mouse pointer over:
+		- the top navigation bar's dark grey links, will change them to light grey
+		- the *Subscribe* button will change it from dark grey text on an orange background, to orange text on a dark grey background
+		- the footer's white email and social media icons, will change them to orange
+
+* Mobile devices:
+	- the Bootstrap collapsed navigation with:
+		- the white larger font LevelCoder text on the left  
+		- the Bootstrap *toggler* or *hamburger* button (three small vertical lines stacked on top of each another inside a fine dark grey box) on the right 
+
+* Desktop and mobile devices:
+	- left justified white heading *What is this site about?* 
+	- underneath the heading is a text paragraph
+	- underneath the paragraph is another left justified white heading *Who are we?*
+	- underneath the heading are another two text paragraphs
+	- underneath the second paragraph is the heading *Sign up for our weekly newspaper*, followed by a *crowd* icon
+	- underneath the heading is a form containing:
+		- *First name* label above it's text input box
+		- *Email address* label above it's text input box
+		- orange *Subscribe* button		
+	- bottom horizonal footer with horizontally centrally-aligned white items:
+		- the text *Connect* 
+		- icons for Emailing, Twitter, LinkedIn and TikToK.
+
+        <h2 align="left"><img src="docs/pictures/about-footer.jpg"></h2>
+
+**Site Actions**
+
+When the user selects an active area of the screen, the following results will be seen.
+
+* On the navigation area of desktop devices:
+	1. Clicking or tapping on the white text *LevelCoder* will
+		- cause no change in text behaviour
+		- take the user to index.html, the Home page.
+	2. Clicking or tapping on the dark grey text *Home* will
+		- change the text colour to light grey 
+		- take the user to index.html, the Home page.
+	3. Clicking or tapping on the dark grey text *Courses* will:
+		- change the text colour to light grey 
+		- take the user to courses.html, the Courses page.
+	4. Clicking or tapping on the white text *About* will
+		- refresh the page
+		- cause no change in text behaviour.
+
+* On the navigation area of mobile devices:
+	1. Tapping on the toggler will open a dropdown menu underneath the white *LevelCoder* text. The user will see:
+		- the dark grey *Home*, white *Courses* and dark grey *About* texts in a vertical list 
+		- toggler border will be thicker and light grey.
+	2. Tapping on the white text *LevelCoder* will:
+		- cause no change in text behaviour
+        - collapse the navigation
+		- take the user to index.html, the Home page.
+	3. Tapping on the dark grey *Home* text will:
+		- change the text colour to light grey
+		- collapse the navigation
+		- take the user to index.html, the home page.
+	4. Tapping on the dark grey *Courses* text will:
+		- change the text colour to light grey 
+		- collapse the navigation
+		- take the user to courses.html, the Courses page.
+	5. Tapping on the white text *About* will:
+		- refresh the page
+		- collapse the navigation
+		- cause no change in text behaviour.
+	6. When the navigation dropdown menu is visible, tapping on the toggler again, will collapse it. The togger will retain the thick light grey border until the user taps elsewhere on the screen, or the page is refreshed.
+
+* On the form area of desktop and mobile devices:
+	1. Clicking or tapping on the input text boxes will:
+		- the text box will have a thick semi-transparent light blue border
+	2. Clicking or tapping on the *Subscribe* button will initiate the HTML basic error checking. Here are a few of the checks:
+		- if no text is entered into both input boxes: 
+			- error message = *Please fill out this field.*
+
+        <h2 align="left"><img src="docs/pictures/form-error-both-clear.jpg"></h2>
+
+		- if at least one character is entered in to First name box, but Email box:
+			is clear:
+			- error message = *Please fill out this field.* 
+
+            <h2 align="left"><img src="docs/pictures/form-error-email-clear.jpg"></h2>
+
+			- if any character/s except @ is entered:
+				- error message = *Please include an @ in the email address. x is missing an @.*
+
+            <h2 align="left"><img src="docs/pictures/form-error-email-no-at.jpg"></h2>
+
+			- if any character/s followed by @ then alpha-numeric character/s . alpha-numeric character/s entered:
+				- no error message and form is submitted. User is taken to confirmation.html.	
+
+            <h2 align="left"><img src="docs/pictures/form-check-min.jpg"></h2>
+					
+
+	Note: 	The default HTML valid email checker, whilst it is comprehensive, it does allow for non-standard email formats. In today's real world this should not be relied on.
+		For further information see the specification published by [WHATWG](https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address)
 
 
+* On the footer area of desktop and mobile devices:
+	1. Clicking or tapping the Email *envelope* footer icon will:
+		- change it's colour to orange 
+		- take the user to their default email provider, where fields will be pre-filled:
+			- From: user's email address
+			- To: LevelCoder's email address
+			- Subject: *Mail_via_LevelCoder_WestMids*
+			- First line of email: *Dear_LevelCoder,*
+
+        <h2 align="left"><img src="docs/pictures/about-email.jpg"></h2>
+
+	2. Clicking or tapping the Twitter *bird* footer icon will:
+		- change it's colour to orange 
+		- take the user to the site's Twitter account in another tab.
+	3. Clicking or tapping the LinkedIn *in* footer icon will:
+		- change it's colour to orange 
+		- take the user to the site's LinkedIn account in another tab.
+	4. Clicking or tapping the TikTok *d* footer icon will:
+		- change it's colour to orange 
+		- take the user to the site's TikTok account in another tab.
+
+#### Confirmation Page
+Desktop screen:
+
+<h2 align="left"><img src="docs/pictures/confirmation.jpg"></h2>
+
+Mobile screen:
+
+<h2 align="left"><img src="docs/pictures/confirmation-mobile.jpg"></h2>
+
+**Site View**
+
+From the *About* page's form, clicking or tapping the *Subscribe* button, after entering valid name and email data -
+the following features of the site are visible to the user.
+
+* Desktop devices:
+	- fixed top horizontal navigation bar, with left-aligned active text ina horizontal list:
+		- *LevelCoder* and *About* links in white 
+		- *Home* and *Courses* in dark grey
+	- hovering the mouse pointer over:
+		- the top navigation bar's dark grey links, will change them to light grey
+		- the footer's white social media icons, will change them to orange
+
+* Mobile devices:
+	- the Bootstrap collapsed navigation with:
+		- the white larger font LevelCoder text on the left  
+		- the Bootstrap *toggler* or *hamburger* button (three small vertical lines stacked on top of each another inside a fine dark grey box) on the right 
+
+* Desktop and mobile devices:
+	- central white heading *Thank you for signing up to our weekly newsletter* followed by *clapping hands* icon
+	- bottom horizonal footer with horizontally centrally-aligned white items:
+		- the text *Follow* 
+		- icons for Twitter, LinkedIn and TikToK.
+
+**Site Actions**
+
+* Note: The form clears when the user is taken to the *Confirmation* page, but if the *back* button is used, the data will be seen in the form. 
+In reality, extra security would be built into the form to prevent this. See bug xx.
+
+When the user selects an active area of the screen, the following results will be seen.
+
+* On the navigation area of desktop devices:
+	1. Clicking or tapping on the white text *LevelCoder* will
+		- cause no change in text behaviour
+		- clear data from the form
+		- take the user to index.html, the Home page.
+	2. Clicking or tapping on the dark grey text *Home* will
+		- change the text colour to light grey 
+		- clear data from the form
+		- take the user to index.html, the Home page.
+	3. Clicking or tapping on the dark grey text *Courses* will:
+		- change the text colour to light grey 
+		- clear data from the form
+		- take the user to courses.html, the Courses page.
+	4. Clicking or tapping on the white text *About* will
+		- cause no change in text behaviour
+		- clear data from the form
+		- take the user to about.html, the About and Contact page.
+
+* On the navigation area of mobile devices:
+	1. Tapping on the toggler will open a dropdown menu underneath the white *LevelCoder* text. The user will see:
+		- the dark grey *Home*, white *Courses* and dark grey *About* texts in a vertical list 
+		- toggler border will be thicker and light grey.
+	2. Tapping on the white text *LevelCoder* will:
+		- cause no change in text behaviour
+		- collapse the navigation
+		- clear data from the form
+		- take the user to index.html, the Home page.
+	3. Tapping on the dark grey *Home* text will:
+		- change the text colour to light grey
+		- collapse the navigation
+		- clear data from the form
+		- take the user to index.html, the home page.
+	4. Tapping on the dark grey *Courses* text will:
+		- change the text colour to light grey 
+		- collapse the navigation
+		- clear data from the form
+		- take the user to courses.html, the Courses page.
+	5. Tapping on the white text *About* will:
+		- collapse the navigation
+		- clear data from the form
+		- cause no change in text behaviour.
+		- take the user to about.html, the About and Contact page.
+	6. When the navigation dropdown menu is visible, tapping on the toggler again, will collapse it. The togger will retain the thick light grey border until the user taps elsewhere on the screen, or the page is refreshed.
+
+* On the footer area of desktop and mobile devices:
+	1. Clicking or tapping the Twitter *bird* footer icon will:
+		- change it's colour to orange 
+		- take the user to the site's Twitter account in another tab.
+	2. Clicking or tapping the LinkedIn *in* footer icon will:
+		- change it's colour to orange 
+		- take the user to the site's LinkedIn account in another tab.
+	3. Clicking or tapping the TikTok *d* footer icon will:
+		- change it's colour to orange 
+		- take the user to the site's TikTok account in another tab.
 
 ### Supported Screen Sizes and Browsers
 
