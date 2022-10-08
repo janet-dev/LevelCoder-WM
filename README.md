@@ -274,8 +274,20 @@ confirmation.html
     ```html
     <form class="row g-5" method="GET" action="confirmation.html"></form>
     ```
-10. Form not clearing
+10. On the *About* page, users are able to retrieve data from subscription form after submission by using the *back* button. This still happens if the code `method="GET" action="confirmation.html` is removed from the form element. Here the *Subscribe* button will default to Bootstrap submit actions, where the page refreshes and the data is cleared from the fields. By using the *back* button, the user can see the data.
+    - This is a known issue which can be prevented by a Javascript script supplied by [Clue Mediator](https://www.cluemediator.com/how-to-disable-the-browser-back-button-using-javascript). It is placed in the *head* section of the HTML file where the user is being directed **from**, in this case the *about.html*. Inserted it under the *title* element:
+    ```
+    <head>
+        
+        <title>About Page</title>
+        <script type="text/javascript">
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+        </script>
 
+    </head>
+    ```
 11. Flex column heading in courses.html was not stretching across the whole screen and forcing the course cards onto the next row. 
     - Solved by watching this [CSS Flexbox Tutorial](https://www.youtube.com/watch?v=M1yD8GVpLnQ)
     ```
@@ -307,6 +319,16 @@ confirmation.html
         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
         <span class="sr-only">Email LevelCoder</span>
     </a>
+    ```
+13. Some of the images were being compressed when the screen size decreased.
+    - Used the following CSS code from [Stackoverflow](https://stackoverflow.com/questions/16177707/avoid-stretch-on-image-css) to try and minimise this:
+    ```
+	picture {
+	    display: block;
+	    margin: 0px auto;
+	    width: initial;
+	    height: auto;
+    }
     ```
 
 ### Test Cases
