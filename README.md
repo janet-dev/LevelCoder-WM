@@ -832,9 +832,22 @@ To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the ter
 
 `python3 -m http.server`
 
+<h2 align="left"><img src="docs/pictures/deploy-python.jpg"></h2>
+
 A blue button should appear to click: _Make Public_,
 
+<h2 align="left"><img src="docs/pictures/deploy-port-8000.jpg"></h2>
+
 Another blue button should appear to click: _Open Browser_.
+
+If this is not seen, on the bottom blue banner, click: Ports: 8000
+
+<h2 align="left"><img src="docs/pictures/deploy-open-port.jpg"></h2>
+
+Or click Ports icon **1** then Address or globe icon **2** to run project in a new browser tab
+
+<h2 align="left"><img src="docs/pictures/deploy-port-browser.jpg"></h2>
+
 
 In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal.
 
