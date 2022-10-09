@@ -97,8 +97,7 @@ Navigation bar will be the default responsive Bootstrap one for all pages.
             - links are supplied for the course provider and their social media accounts. These links will become orange when hovered over.
 <h2 align="left"><img src="docs/pictures/courses.jpg"></h2>
 
-* About and Contact page 
-The combined About and Contact page will be composed of:
+* About page - the combined about and contact page will be composed of:
 
 - Information about the site and why it was created.
 - Information about the company.
@@ -110,7 +109,7 @@ The combined About and Contact page will be composed of:
     - Email link will be accessed via the [envelope icon](docs/pictures/about-footer.jpg) on the footer
 <h2 align="left"><img src="docs/pictures/about.jpg"></h2>
 
-* Confirmation page is only visible on successful sign up to the newsletter and will contain the standard navigation and footer.
+* Confirmation page is only visible on successful sign up to the newsletter and will contain the standard navigation and footer. Users will only be able to navigate from this page via the navigation bar, as the back button will be disabled.
 <h2 align="left"><img src="docs/pictures/confirmation.jpg"></h2>
 
 ### Footer
@@ -189,62 +188,54 @@ Classes -md- and -lg- were specially defined for the courses page, where Bootstr
 
 ### Code Validation
 * HTML - No errors or warnings were detected by W3C Validation for pages:
-    - [index](docs/testing/w3c-validation/w3c-html-index.pdf)
-    - [courses](docs/testing/w3c-validation/w3c-html-courses.pdf)
-    - [about](docs/testing/w3c-validation/w3c-html-about.pdf)
-    - [confirmation](docs/testing/w3c-validation/w3c-html-confirm.pdf)
-<h2 align="left"><img src="docs/pictures/test-index.jpg"></h2>
+    - [index.html PDF report](docs/testing/w3c-validation/w3c-html-index.pdf)
+    - [courses.html PDF report](docs/testing/w3c-validation/w3c-html-courses.pdf)
+    - [about.html PDF report](docs/testing/w3c-validation/w3c-html-about.pdf)
+    - [confirmation.html PDF report](docs/testing/w3c-validation/w3c-html-confirm.pdf)
 
 * CSS - No errors or warnings were detected by W3C Jigsaw Validation for:
-    - [style](docs/testing/w3c-validation/w3c-css.pdf)
-<h2 align="left"><img src="docs/pictures/test-css.jpg"></h2>
+    - [style.css PDF report](docs/testing/w3c-validation/w3c-css.pdf)
 
 ### Lighthouse
-Lighthouse is an automated tool for improving the quality of web page. It checks the current webpage for performance, accessibility, best practices and SEO. A summary for the performance of each page is provided here:
+Lighthouse is an automated tool for improving the quality of web page. It checks the current webpage for performance, accessibility, best practices and SEO. 
+
+The desktop audit scored 100 across the four features for all pages. Here is a typical summary:
+<h2 align="left"><img src="docs/pictures/courses-summary-desktop.jpg"></h2>
+
+The mobile audit scored >90 across the four features for all pages. Here is the lowest-scored summary:
+<h2 align="left"><img src="docs/pictures/courses-summary-mobile.jpg"></h2>
 
 index.html
 
-- Desktop - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-index-desktop-2.pdf) for more information.
-<h2 align="left"><img src="docs/pictures/index-summary-desktop.jpg"></h2>
-
-- Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-index-mobile-2.pdf) for more information.
-<h2 align="left"><img src="docs/pictures/index-summary-mobile.jpg"></h2>
+- [Desktop PDF report](docs/testing/lighthouse-reports/lighthouse-index-desktop-2.pdf)
+- [Mobile PDF report](docs/testing/lighthouse-reports/lighthouse-index-mobile-2.pdf)
 
 courses.html
 
-- Desktop - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-courses-desktop-2.pdf) for more information.
-<h2 align="left"><img src="docs/pictures/courses-summary-desktop.jpg"></h2>
-
-- Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-courses-mobile-2.pdf) for more information.
-<h2 align="left"><img src="docs/pictures/courses-summary-mobile.jpg"></h2>
+- [Desktop PDF report](docs/testing/lighthouse-reports/lighthouse-courses-desktop-2.pdf)
+- [Mobile PDF report](docs/testing/lighthouse-reports/lighthouse-courses-mobile-2.pdf)
 
 about.html
 
-- Desktop - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-about-desktop-2.pdf) for more information.
-<h2 align="left"><img src="docs/pictures/about-summary-desktop.jpg"></h2>
-
-- Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-about-mobile-2.pdf) for more information.
-<h2 align="left"><img src="docs/pictures/about-summary-mobile.jpg"></h2>
+- [Desktop PDF report](docs/testing/lighthouse-reports/lighthouse-about-desktop-2.pdf)
+- [MobilePDF report](docs/testing/lighthouse-reports/lighthouse-about-mobile-2.pdf)
 
 confirmation.html
 
-- Desktop - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-desktop.pdf) for more information.
-<h2 align="left"><img src="docs/pictures/confirm-summary-desktop.jpg"></h2>
-
-- Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-mobile.pdf) for more information.
-<h2 align="left"><img src="docs/pictures/confirm-summary-mobile.jpg"></h2>
+- [Desktop PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-desktop.pdf)
+- [Mobile PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-mobile.pdf)
 
 ### Testing User Stories
 * As a visiting user, I would like to connect with the company via their social media.
-	- Upon visiting the Home page, the user is able to clearly see the company's social media accounts on the footer.
-	- The social media accounts included are:
+	- Upon visiting the Home page, the user is able to clearly see the company's [social media accounts on the footer](docs/pictures/home-desktop.jpg). The word *Follow* preceeds the well-know social media icons.
+	- The [social media accounts](docs/pictures/footer.jpg) included are:
 		- Twitter: users can follow and tag the company or share content. If the company follows the user back, then direct messaging is available.
 		- LinkedIn: users can follow and tag the company or share content. If their connection requests are accepted, then direct messaging is available.
 		- TikTok: users can follow the company or tag it in their video captions.
 * As a visiting user, I would like to see if there are more advanced courses.
-	- On the Courses page, the user is greeted by several course cards, listing the course details. 
+	- On the Courses page, the user is greeted by several [course cards](docs/pictures/courses.jpg), listing the course details. 
 	- The user can choose from advanced several-month bootcamp courses to a year-long [Level 5 diploma](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels#).
-* As a visiting user, I would like to subscribe to a newsletter in order to receive current news about the site.
+* As a visiting user, I would like to [subscribe to a newsletter](docs/pictures/about.jpg) in order to receive current news about the site.
 	- On the About page, the user is greeted with information about the site and it's creators. They are asked to subscribe to a weekly newsletter via a simple form.
 
 ### Further Testing
@@ -427,28 +418,19 @@ On any page, clicking or tapping *Home* or the white larger font *LevelCoder* te
 The following features of the site are visible to the user.
 
 * Desktop devices:
-	- fixed top horizontal navigation bar, with left-aligned active text in a horizontal list:
+	- fixed top horizontal [navigation bar](docs/pictures/nav-desktop.jpg), with left-aligned active text in a horizontal list:
 		- *LevelCoder* and *Home* links in white 
 		- *Courses* and *About* in dark grey
 
-        <h2 align="left"><img src="docs/pictures/nav-desktop.jpg"></h2>
-
 	- hovering the mouse pointer over:
-		- the top navigation bar's dark grey links, will change them to light grey
-		- the coloured text links, will change the text colour to white
-
-        <h2 align="left"><img src="docs/pictures/home-links.jpg"></h2>
-
-		- the footer's white social media icons, will change them to orange
-
-        <h2 align="left"><img src="docs/pictures/footer.jpg"></h2>
+		- the top [navigation bar's dark grey links, will change them to light grey
+		- the [coloured text links](docs/pictures/home-links.jpg), will change the text colour to white
+		- the footer's white [social media icons](docs/pictures/footer.jpg), will change them to orange
 
 * Mobile devices:
-	- the Bootstrap collapsed navigation with:
+	- the Bootstrap [collapsed navigation](docs/pictures/nav-mobile.jpg) with:
 		- the white larger font LevelCoder text on the left  
 		- the Bootstrap *toggler* or *hamburger* button (three small vertical lines stacked on top of each another inside a fine dark grey box) on the right 
-
-        <h2 align="left"><img src="docs/pictures/nav-mobile.jpg"></h2>
 
 * Desktop and mobile devices:
 	- central white heading *Do you want to... explore a tech career here, in the West Midlands?* 
@@ -624,7 +606,7 @@ When the user selects an active area of the screen, the following results will b
 		- change it's colour to orange 
 		- take the user to the site's TikTok account in another tab.
 
-#### About and Contact Page
+#### About Page
 Desktop screen:
 
 <h2 align="left"><img src="docs/pictures/about.jpg"></h2>
@@ -662,11 +644,9 @@ The following features of the site are visible to the user.
 		- *First name* label above it's text input box
 		- *Email address* label above it's text input box
 		- orange *Subscribe* button		
-	- bottom horizonal footer with horizontally centrally-aligned white items:
+	- bottom horizonal [footer](docs/pictures/about-footer.jpg) with horizontally centrally-aligned white items:
 		- the text *Connect* 
 		- icons for Emailing, Twitter, LinkedIn and TikToK.
-
-        <h2 align="left"><img src="docs/pictures/about-footer.jpg"></h2>
 
 **Site Actions**
 
@@ -712,39 +692,29 @@ When the user selects an active area of the screen, the following results will b
 	1. Clicking or tapping on the input text boxes will:
 		- the text box will have a thick semi-transparent light blue border
 	2. Clicking or tapping on the *Subscribe* button will initiate the HTML basic error checking. Here are a few of the checks:
-		- if no text is entered into both input boxes: 
+		- if no text is entered into [both input boxes](docs/pictures/form-error-both-clear.jpg): 
 			- error message = *Please fill out this field.*
 
-        <h2 align="left"><img src="docs/pictures/form-error-both-clear.jpg"></h2>
-
-		- if at least one character is entered in to First name box, but Email box:
-			is clear:
+		- if at least one character is entered in to First name box, but [Email box:
+			is clear](docs/pictures/form-error-email-clear.jpg):
 			- error message = *Please fill out this field.* 
 
-            <h2 align="left"><img src="docs/pictures/form-error-email-clear.jpg"></h2>
-
-			- if any character/s except @ is entered:
+			- if any character/s [except @](docs/pictures/form-error-email-no-at.jpg) is entered:
 				- error message = *Please include an @ in the email address. x is missing an @.*
 
-            <h2 align="left"><img src="docs/pictures/form-error-email-no-at.jpg"></h2>
-
 			- if any character/s followed by @ then alpha-numeric character/s . alpha-numeric character/s entered:
-				- no error message and form is submitted. User is taken to confirmation.html.	
-
-            <h2 align="left"><img src="docs/pictures/form-check-min.jpg"></h2>				
+				- [no error message](docs/pictures/form-check-min.jpg) and form is submitted. User is taken to confirmation.html.	
 
 	Note: 	The default HTML valid email checker, whilst it is comprehensive, it does allow for non-standard email formats. In today's real world this should not be relied on. For further information see the specification published by [WHATWG](https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address)
 
 * On the footer area of desktop and mobile devices:
 	1. Clicking or tapping the Email *envelope* footer icon will:
 		- change it's colour to orange 
-		- take the user to their default email provider, where fields will be pre-filled:
+		- take the user to their default email provider, where [fields will be pre-filled](docs/pictures/about-email.jpg):
 			- From: user's email address
 			- To: LevelCoder's email address
 			- Subject: *Mail_via_LevelCoder_WestMids*
 			- First line of email: *Dear_LevelCoder,*
-
-        <h2 align="left"><img src="docs/pictures/about-email.jpg"></h2>
 
 	2. Clicking or tapping the Twitter *bird* footer icon will:
 		- change it's colour to orange 
@@ -862,9 +832,9 @@ When the user selects an active area of the screen, the following results will b
 	```
 2. A blue button should appear to click: [_Make Public_](docs/pictures/deploy-port-8000.jpg),
 3. Another similar blue button should appear to click: _Open Browser_. If this is not seen, click on the:
-	* [ports icon](docs/pictures/deploy-port-browser.jpg) **1** then the port address or globe icon **2** to run the project in a new browser tab.
+	* [_Ports icon_](docs/pictures/deploy-port-browser.jpg) **1** then the port address or globe icon **2** to run the project in a new browser tab.
 
-The ports can also be accessed via the bottom blue banner, where it shows [Ports: 8000](docs/pictures/deploy-open-port.jpg)
+The ports can also be accessed via the bottom blue banner, where it shows [_Ports: 8000_](docs/pictures/deploy-open-port.jpg)
 
 In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal.
 
