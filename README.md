@@ -43,13 +43,18 @@ The site is designed to be responsive and accessible on a range of devices, maki
 ### User personas
 These user personas represent some of the target audience for this site - [view the PDF document](docs/ux/user-personas.pdf).
 
+User personas help humanise the potential users. They depict their struggles, limitations, background and their goals. They give the designer yet another layer of information about the ethos of the project.
+
 ### Design
 * Colour Scheme
     - Bootstrap's own white (#ffffff) text on dark grey (#212529) scheme is used for the navigation and footer sections.
     - Colours white (#ffffff) and dark grey (#212529) are used for text.
     - Orange (#ff8c00) is used as an extra indicator when hovering over links.
+
+	This colour scheme was chosen for simplicity and readability. Too much colour can make the site to busy or distracting. Dark grey/white was chosen for the navigation and the odd pop of colour is provided by the CSS hover function.
+
 * Typography
-    - For the home and about pages, Roboto font is used for the main headings for good readability and text contrast when required. This was chosen for best readability. If this font is unavailable, san serif is used as a fallback.
+    - For the home and about pages, [Roboto font](https://fonts.google.com/specimen/Roboto) is used for good readability and contrast when required. It is considerd both [friendly and professional](https://xd.adobe.com/ideas/principles/web-design/best-modern-fonts-for-websites/), so should suit most sites. If this font is unavailable, san serif is used as a fallback.
 * Imagery
     - The home page features the striking Selfridges Building, which defines Birmingham. This background image is both artistic and futuristic, and is used as the common background throughout the site. It was chosen to be a technical and friendly hero image.
     - On the courses page, each course is listed in it's own Bootstrap card, which features the providers own logo. This is supplied in order to build up trust and to ensure the users know which provider they are directed to from the site.
@@ -114,13 +119,13 @@ The combined About and Contact page will be composed of:
 * Email us facility accessed via the envelope icon, but only on the About page
 
 ## Future Features
-After asking the advice of the LinkedIn and [codebar](https://codebar.io/) communities, further features are required:
+After asking the advice of the [LinkedIn](https://www.linkedin.com/in/janetdornan/) and [codebar](https://codebar.io/) communities, further features are required:
 * how to access career advice, network and where to find jobs
 * how to join the tech community
 * how to start contributing to open source projects
 * where to find free products to use for design, development and deployment
 
-After this project has been submitted, the features above will be implemented, as the design of the project enables easy replication. The code will be made open source by applying the applicable licence and supporting documentation. Users can then modify the site, add to it or replicate for their own location or subject matter.
+After this project has been submitted, the features above will be implemented, as this will be an ongoing project to help those new to tech. The design of the project enables easy replication and the code will be made open source by applying the applicable licence and supporting documentation. Users can then modify the site, add to it or replicate for their own location or subject matter.
 
 ## Technology Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) and [CSS3](https://en.wikipedia.org/wiki/CSS) for building and custom styling the site.
@@ -145,6 +150,41 @@ After this project has been submitted, the features above will be implemented, a
 * PDF Reader from [Adobe Acrobat Reader](https://www.adobe.com/uk/)
 
 ## Testing
+
+**The site was built, tested and validated on the [Chrome browser](docs/pictures/chrome.jpg) only.**
+
+### Supported Screen Sizes and Browsers
+
+Bootstrap v5.2 was used for building the site - see the [supported browsers and devices](https://getbootstrap.com/docs/5.2/getting-started/browsers-devices/).
+* Bootstrap supports the latest, stable releases of all major browsers and platforms:
+    - Chrome >= 60
+    - Firefox >= 60
+    - Firefox ESR
+    - iOS >= 12 (see bug 10 for issues)
+    - Safari >= 12 (see bug 10 for issues)
+    - Explorer <= 11
+    - Edge - latest version
+
+Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, and Firefox for Linux, though they are not officially supported. Proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
+
+* Devices supported:
+    - Mac
+    - Windows
+    - Android
+    - iOS
+
+* See the [six default breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/) provided by Bootstrap for responsive building. Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device. 
+
+    | Breakpoint               | Class          | Dimensions |
+    | ------------------------ | -------------- | ---------- |
+    | Extra small              | none           | <576px     |
+    | Small                    | sm             | ≥576px     |
+    | Medium                   | md             | ≥768px     |
+    | Large                    | lg             | ≥992px     |
+    | Extra large              | xl             | ≥1200px    |
+    | Extra extra large        | xxl            | ≥1400px    |
+
+Classes -md- and -lg- were specially defined for the courses page, where Bootstrap cards were utilised. Using these Bootstrap breakpoint classes helped to ensure smoother wrapping of the rows when different screen sizes were in operation.
 
 ### Code Validation
 * HTML - No errors or warnings were detected by W3C Validation for pages:
@@ -193,8 +233,11 @@ confirmation.html
 - Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-mobile.pdf) for more information.
 <h2 align="left"><img src="docs/pictures/confirm-summary-mobile.jpg"></h2>
 
+### Testing User Stories
+
+
 ### Further Testing
-Testing and validation was carried out on the **Chrome** browser only, though the site was viewed through others to check the functionality of the site remained the same.
+1. Testing and validation was carried out on the Chrome browser, though the site was viewed through others (including [Microsoft Edge](docs/pictures/edge.jpg)) to check the functionality of the site remained the same.
 
 For further validation, viewed different browsers on other devices via [LambdaTest](https://www.lambdatest.com/), a cross browser online testing tool.
 
@@ -209,6 +252,7 @@ Performed a visual check on the following [devices and browsers](docs/pictures/l
 | Chromium      | [iOS 13.3](docs/pictures/lambda-chromium-mobile-log.jpg)       | iPhone 11     | OK            |
 | Chrome        | [macOS Mojave](docs/pictures/lambda-chrome-desktop-log.jpg)   | Desktop       | OK            |
 
+2. Colleagues from codebar, associates from LinkedIn and TechMids, plus friends and family members were asked to review the site and point out any bugs and/or user experience issues. 
 
 ### Bugs Fixed
 1. To be consistant, [replaced all named and rgb colours with hex numbers](docs/pictures/bug-colour-hex.png) in style.css.
@@ -232,7 +276,7 @@ Performed a visual check on the following [devices and browsers](docs/pictures/l
     </div>
     ```
     See [Bootstrap cards](https://getbootstrap.com/docs/5.0/components/card/)
-     and [Bootstrap grid.](https://getbootstrap.com/docs/5.0/layout/grid/#row-columns)
+     and [Bootstrap grid with row columns.](https://getbootstrap.com/docs/5.0/layout/grid/#row-columns)
 4. On the courses page, the [cards were not centered](docs/pictures/bug-card-not-centre.png) in their columns.
     - Fixed by displaying as flexbox and centering the contents
     ```css
@@ -242,7 +286,7 @@ Performed a visual check on the following [devices and browsers](docs/pictures/l
     }
     ```
 5. On the courses page, depending on the card description, the cards could be unequal in length.
-    - Fixed by adding class .h-100 to the cards. See [Bootstrap cards.](https://getbootstrap.com/docs/5.0/components/card/)
+    - Fixed by adding class .h-100 to the cards. See [Bootstrap cards](https://getbootstrap.com/docs/5.0/components/card/#grid-cards).
     ```html
     <div class="card h-100">
     ```
@@ -268,7 +312,7 @@ Performed a visual check on the following [devices and browsers](docs/pictures/l
     ```
 8. Because some of the pages could become quite long, needed to fix the menu to the top of the viewport.
     - Implemented by making the navigation fixed at the top by the Bootstrap class .fixed-top. 
-    [See Bootstrap navigation](https://getbootstrap.com/docs/5.0/components/navbar/)
+    [See Bootstrap navigation](https://getbootstrap.com/docs/5.0/components/navbar/#placement)
     ```html
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"></nav>
     ```
@@ -345,6 +389,12 @@ Performed a visual check on the following [devices and browsers](docs/pictures/l
         };
     </script>
 	```
+#### Known Bugs
+* Some images may appear compressed depending on the screen width. Bootstrap is designed to be mobile first and includes [six available breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/#available-breakpoints). 
+	```
+	Breakpoints are also representative of a subset of common device sizes and viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device.
+	```
+* On some mobile devices the hero image pushes the size of screen out, to show white gap on the right.
 
 ### Test Cases
 
@@ -793,51 +843,15 @@ When the user selects an active area of the screen, the following results will b
 		- change it's colour to orange 
 		- take the user to the site's TikTok account in another tab.
 
-### Supported Screen Sizes and Browsers
-
-Bootstrap v5.2 was used for building the site - see the [supported browsers and devices](https://getbootstrap.com/docs/5.2/getting-started/browsers-devices/).
-* Bootstrap supports the latest, stable releases of all major browsers and platforms:
-    - Chrome >= 60
-    - Firefox >= 60
-    - Firefox ESR
-    - iOS >= 12 (see bug 10 for issues)
-    - Safari >= 12 (see bug 10 for issues)
-    - Explorer <= 11
-    - Edge - latest version
-
-Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, and Firefox for Linux, though they are not officially supported. Proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
-
-* Devices supported:
-    - Mac
-    - Windows
-    - Android
-    - iOS
-
-* See the [six default breakpoints](https://getbootstrap.com/docs/5.2/layout/breakpoints/) provided by Bootstrap for responsive building. Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device. 
-
-    | Breakpoint               | Class          | Dimensions |
-    | ------------------------ | -------------- | ---------- |
-    | Extra small              | none           | <576px     |
-    | Small                    | sm             | ≥576px     |
-    | Medium                   | md             | ≥768px     |
-    | Large                    | lg             | ≥992px     |
-    | Extra large              | xl             | ≥1200px    |
-    | Extra extra large        | xxl            | ≥1400px    |
-
-Classes -md- and -lg- were specially defined for the courses page, where Bootstrap cards were utilised. Using these Bootstrap breakpoint classes helped to ensure smoother wrapping of the rows when different screen sizes were in operation.
-
-
-
 ## Deployment
 
 ### Gitpod LocalHost Deployment
 
 1. To run a frontend (HTML, CSS, Javascript only) application in Gitpod, [in the terminal](docs/pictures/deploy-python.jpg), type:
-
-	`python3 -m http.server`
-
+	```python
+	python3 -m http.server
+	```
 2. A blue button should appear to click: [_Make Public_](docs/pictures/deploy-port-8000.jpg),
-
 3. Another similar blue button should appear to click: _Open Browser_. If this is not seen, click on the:
 	* [ports icon](docs/pictures/deploy-port-browser.jpg) **1** then the port address or globe icon **2** to run the project in a new browser tab.
 
@@ -912,6 +926,10 @@ Markdown Cheatsheet from [Adam Pritchard](https://github.com/adam-p/markdown-her
 
 Figma Community: User Persona Template by [Ikechukwu Okonkwo](https://www.figma.com/@iykee)
 
+The 7 Best Modern Fonts for Websites by [Justin Morales ](https://xd.adobe.com/ideas/principles/web-design/best-modern-fonts-for-websites/)
+
+Choose the Best Color Combinations for Your Website by [Jimdo](https://www.jimdo.com/blog/best-color-combinations-for-your-website/)
+
 Woman in front of a lit wall by [Josh Hild](https://unsplash.com/@joshhild) on Unsplash
 
 Selfridges Building in Birmingham by [Christian Holzinger](https://unsplash.com/@pixelatelier) on Unsplash
@@ -939,9 +957,12 @@ Many of the references have been embedded as links throughout this document and 
 
 [Using WebP Images](https://css-tricks.com/using-webp-images/) by Jeremy Wagner
 
+[Optimize Cumulative Layout Shift](https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions) by Addy Osmani
+
 [Form Submission Opens New Tab/Window](https://css-tricks.com/snippets/html/form-submission-new-window/) by Chris Coyier
 
 [Can I POST to a new window that I want to open up?](https://webmasters.stackexchange.com/questions/7958/can-i-post-to-a-new-window-that-i-want-to-open-up) solution by [Bavi_H](https://webmasters.stackexchange.com/users/3108/bavi-h)
 
-[Clue Mediator](https://www.cluemediator.com/how-to-disable-the-browser-back-button-using-javascript)
+[How to disable the browser back button](https://www.cluemediator.com/how-to-disable-the-browser-back-button-using-javascript) by Clue Mediator
 
+[Never use the unload event](https://web.dev/bfcache/?utm_source=lighthouse&utm_medium=devtools#never-use-the-unload-event) by Philip Walton and Barry Pollard
