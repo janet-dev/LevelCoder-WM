@@ -428,7 +428,7 @@ The following features of the site are visible to the user.
 		- the footer's white [social media icons](docs/pictures/footer.jpg), will change them to orange
 
 * Mobile devices:
-	- the Bootstrap [collapsed navigation](docs/pictures/nav-mobile.jpg) with:
+	- the Bootstrap [collapsed navigation](docs/pictures/nav-mobile-collapsed.jpg) with:
 		- the white larger font LevelCoder text on the left  
 		- the Bootstrap *toggler* or *hamburger* button (three small vertical lines stacked on top of each another inside a fine dark grey box) on the right 
 
@@ -459,7 +459,7 @@ When the user selects an active area of the screen, the following results will b
 		- take the user to about.html, the About and Contact page.
 
 * On the navigation area of mobile devices:
-	1. Tapping on the toggler will open a dropdown menu underneath the white *LevelCoder* text. The user will see:
+	1. Tapping on the toggler will open a [dropdown menu](docs/pictures/nav-mobile.jpg) underneath the white *LevelCoder* text. The user will see:
 		- the white *Home*, dark grey *Courses* and *About* texts in a vertical list 
 		- toggler border will be thicker and light grey.
 	2. Tapping on the white text *LevelCoder* will:
