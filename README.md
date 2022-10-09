@@ -332,17 +332,7 @@ Performed a visual check on the following [devices and browsers](docs/pictures/l
         <span class="sr-only">Email LevelCoder</span>
     </a>
     ```
-15. Some of the [images were still being compressed](docs/pictures/bug-image-compress.jpg) when the screen size decreased.
-    - Used the following CSS code from [Stackoverflow](https://stackoverflow.com/questions/16177707/avoid-stretch-on-image-css) to try and minimise this:
-    ```css
-	picture {
-	    display: block;
-	    margin: 0px auto;
-	    width: initial;
-	    height: auto;
-    }
-    ```
-16. Ran Lighthouse again for About page - performance was 86% for mobiles. Had an issue with an [unload event](docs/pictures/bug-unload.jpg). 
+15. Ran Lighthouse again for About page - performance was 86% for mobiles. Had an issue with an [unload event](docs/pictures/bug-unload.jpg). 
 	- Solved issue by [replacing unload with pagehide](https://web.dev/bfcache/?utm_source=lighthouse&utm_medium=devtools#never-use-the-unload-event). Now performance is 98%.
 	```html
 	<script>
@@ -948,8 +938,6 @@ Many of the references have been embedded as links throughout this document and 
 [Simple Styles for hr's](https://css-tricks.com/examples/hrs/) by CSS Tricks
 
 [Using WebP Images](https://css-tricks.com/using-webp-images/) by Jeremy Wagner
-
-[Avoid stretch on image css](https://stackoverflow.com/questions/16177707/avoid-stretch-on-image-css) solution by [somdow](https://stackoverflow.com/users/824904/somdow)
 
 [Form Submission Opens New Tab/Window](https://css-tricks.com/snippets/html/form-submission-new-window/) by Chris Coyier
 
