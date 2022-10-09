@@ -34,12 +34,16 @@ The site is designed to be responsive and accessible on a range of devices, maki
 
 <h2 align="center"><img src="docs/pictures/josh-hild-unsplash.png"></h2>
 
-## User stories
+## User Experience (UX)
+### User stories
 * As a visiting user, I would like to connect with the company via their social media.
 * As a visiting user, I would like to see if there are more advanced courses.
 * As a visiting user,  I would like to subscribe to a newsletter in order to receive current news about the site.
 
-## Design
+### User personas
+These user personas represent some of the target audience for this site - [view the PDF document](docs/ux/user-personas.pdf).
+
+### Design
 * Colour Scheme
     - Bootstrap's own white (#ffffff) text on dark grey (#212529) scheme is used for the navigation and footer sections.
     - Colours white (#ffffff) and dark grey (#212529) are used for text.
@@ -50,8 +54,8 @@ The site is designed to be responsive and accessible on a range of devices, maki
     - The home page features the striking Selfridges Building, which defines Birmingham. This background image is both artistic and futuristic, and is used as the common background throughout the site. It was chosen to be a technical and friendly hero image.
     - On the courses page, each course is listed in it's own Bootstrap card, which features the providers own logo. This is supplied in order to build up trust and to ensure the users know which provider they are directed to from the site.
 
-## Wireframes
-See the site design as a [wireframe PDF](docs/wireframe/wireframe.pdf). It includes both desktop and mobile versions.
+### Wireframes
+See the site design as a [wireframe PDF](docs/ux/wireframe.pdf). It includes both desktop and mobile versions.
 
 ## Features
 This website will initially consist of three visible pages (Home, Courses, About) and one hidden (Confirmation for subscription)
@@ -110,11 +114,13 @@ The combined About and Contact page will be composed of:
 * Email us facility accessed via the envelope icon, but only on the About page
 
 ## Future Features
-After asking the advice of the LinkedIn and codebar communities, further features are required:
+After asking the advice of the LinkedIn and [codebar](https://codebar.io/) communities, further features are required:
 * how to access career advice, network and where to find jobs
 * how to join the tech community
 * how to start contributing to open source projects
 * where to find free products to use for design, development and deployment
+
+After this project has been submitted, the features above will be implemented, as the design of the project enables easy replication. The code will be made open source by applying the applicable licence and supporting documentation. Users can then modify the site, add to it or replicate for their own location or subject matter.
 
 ## Technology Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) and [CSS3](https://en.wikipedia.org/wiki/CSS) for building and custom styling the site.
@@ -131,26 +137,14 @@ After asking the advice of the LinkedIn and codebar communities, further feature
 * Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
 * Roboto font from [Google Fonts](https://fonts.google.com/).
 * Icon library and toolkit from [Font Awesome](https://fontawesome.com/).
+* Templates from [Figma](https://www.figma.com/)
 * Online photo editor from [Pixlr](https://pixlr.com/x/).
 * Stock photos from [Unsplash](https://unsplash.com).
+* Paint from [Microsoft](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H?hl=en-us&gl=us)
 * Snip and Sketch from [Microsoft](https://apps.microsoft.com/store/detail/snipping-tool/9MZ95KL8MR0L?hl=en-gb&gl=gb)
+* PDF Reader from [Adobe Acrobat Reader](https://www.adobe.com/uk/)
 
 ## Testing
-Testing and validation was carried out on the **Chrome** browser only, though the site was viewed through others for a quick check.
-
-As a quick check viewed different browsers on other devices via [LambdaTest](https://www.lambdatest.com/), a cross browser online testing tool.
-
-Performed a visual check on the following [devices and browsers](docs/pictures/lambda-log.jpg):
-
-| Browser       | OS             | Device        | Result        |
-| ------------- | -------------- | ------------- | ------------- |
-| Safari        | [iOS 10.3](docs/pictures/lambda-safari-mobile-log.jpg)       | iPhone 5      | OK            | 
-| Safari        | [macOS Catalina](docs/pictures/lambda-safari-desktop-log.jpg) | Desktop       | OK            |
-| Opera         | [Android 11.0](docs/pictures/lambda-opera-mobile-log.jpg)   | Galaxy Tab A7 | OK            |
-| Opera         | [Windows 10](docs/pictures/lambda-opera-desktop-log.jpg)     | Desktop       | OK            |
-| Chromium      | [iOS 13.3](docs/pictures/lambda-chromium-mobile-log.jpg)       | iPhone 11     | OK            |
-| Chrome        | [macOS Mojave](docs/pictures/lambda-chrome-desktop-log.jpg)   | Desktop       | OK            |
-
 
 ### Code Validation
 * HTML - No errors or warnings were detected by W3C Validation for pages:
@@ -198,6 +192,23 @@ confirmation.html
 
 - Mobile - see the detailed [PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-mobile.pdf) for more information.
 <h2 align="left"><img src="docs/pictures/confirm-summary-mobile.jpg"></h2>
+
+### Further Testing
+Testing and validation was carried out on the **Chrome** browser only, though the site was viewed through others to check the functionality of the site remained the same.
+
+For further validation, viewed different browsers on other devices via [LambdaTest](https://www.lambdatest.com/), a cross browser online testing tool.
+
+Performed a visual check on the following [devices and browsers](docs/pictures/lambda-log.jpg):
+
+| Browser       | OS             | Device        | Result        |
+| ------------- | -------------- | ------------- | ------------- |
+| Safari        | [iOS 10.3](docs/pictures/lambda-safari-mobile-log.jpg)       | iPhone 5      | OK            | 
+| Safari        | [macOS Catalina](docs/pictures/lambda-safari-desktop-log.jpg) | Desktop       | OK            |
+| Opera         | [Android 11.0](docs/pictures/lambda-opera-mobile-log.jpg)   | Galaxy Tab A7 | OK            |
+| Opera         | [Windows 10](docs/pictures/lambda-opera-desktop-log.jpg)     | Desktop       | OK            |
+| Chromium      | [iOS 13.3](docs/pictures/lambda-chromium-mobile-log.jpg)       | iPhone 11     | OK            |
+| Chrome        | [macOS Mojave](docs/pictures/lambda-chrome-desktop-log.jpg)   | Desktop       | OK            |
+
 
 ### Bugs Fixed
 1. To be consistant, [replaced all named and rgb colours with hex numbers](docs/pictures/bug-colour-hex.png) in style.css.
@@ -346,6 +357,9 @@ confirmation.html
 	```
 
 ### Test Cases
+
+These cases are included in order to help the next developer understand the design of the site and how to extend it. They document the look and functionality of each page.
+
 #### Home Page
 Desktop screen:
 
@@ -828,46 +842,85 @@ Classes -md- and -lg- were specially defined for the courses page, where Bootstr
 
 ### Gitpod LocalHost Deployment
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. To run a frontend (HTML, CSS, Javascript only) application in Gitpod, [in the terminal](docs/pictures/deploy-python.jpg), type:
 
-`python3 -m http.server`
+	`python3 -m http.server`
 
-<h2 align="left"><img src="docs/pictures/deploy-python.jpg"></h2>
+2. A blue button should appear to click: [_Make Public_](docs/pictures/deploy-port-8000.jpg),
 
-A blue button should appear to click: _Make Public_,
+3. Another similar blue button should appear to click: _Open Browser_. If this is not seen, click on the:
+	* [ports icon](docs/pictures/deploy-port-browser.jpg) **1** then the port address or globe icon **2** to run the project in a new browser tab.
 
-<h2 align="left"><img src="docs/pictures/deploy-port-8000.jpg"></h2>
-
-Another blue button should appear to click: _Open Browser_.
-
-If this is not seen, on the bottom blue banner, click: Ports: 8000
-
-<h2 align="left"><img src="docs/pictures/deploy-open-port.jpg"></h2>
-
-Or click Ports icon **1** then Address or globe icon **2** to run project in a new browser tab
-
-<h2 align="left"><img src="docs/pictures/deploy-port-browser.jpg"></h2>
-
+The ports can also be accessed via the bottom blue banner, where it shows [Ports: 8000](docs/pictures/deploy-open-port.jpg)
 
 In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal.
 
 ### GitHub Pages
 
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+	- [See the screenshot](docs/pictures/github1.jpg)
+2. At the top of the Repository (not top of page), locate the ["Settings" Button](docs/pictures/github2.jpg) on the menu.
+3. Scroll down the Settings page until you locate the ["Pages" Section](docs/pictures/github3.jpg) on the left hand side.
+4. Under "Branch", click the dropdown called "None" and [select "main"](docs/pictures/github4.jpg).
+5. Branch section should look like [this screenshot](docs/pictures/github5.jpg). Wait a few minutes for the page to automatically refresh.
+6. Scroll back to top of the page to locate the now published site in the ["GitHub Pages" section](docs/pictures/github6.jpg). Copy this link.
+7. Go back to your repository and select the [Setting gear icon](docs/pictures/github7.jpg) to the right of "About".
+8. Paste your url into the [box under "Website"](docs/pictures/github8.jpg) and click the "Save Changes" button.
+9. You now have a [link for everyone](docs/pictures/github9.jpg) to use from your repository.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 ## Credits
 
 A huge thank you to the following people and organisations, because without you, the website would not have been produced in it's present form.
 
 ### From the Course
-Rachel Furlong - [EKC DigitalLearn](https://ekcgroup.ac.uk/business-units/ekc-digitallearn) Course Facilitator
- 
+
 Rohit Sharma - [Code Institute](https://codeinstitute.net/) Mentor
 
-Sample README from [Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME)
+Rachel Furlong - [EKC DigitalLearn](https://ekcgroup.ac.uk/business-units/ekc-digitallearn) Course Facilitator
+ 
+Sample README and GitHub deployment instructions from [Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME)
 
 Markdown Cheatsheet from [Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#html)
 
-### Images
+### Media
+
+Figma Community: User Persona Template by [Ikechukwu Okonkwo](https://www.figma.com/@iykee)
 
 Woman in front of a lit wall by [Josh Hild](https://unsplash.com/@joshhild) on Unsplash
 
@@ -876,7 +929,9 @@ Selfridges Building in Birmingham by [Christian Holzinger](https://unsplash.com/
 Course provider icons -  see the [Courses page](https://janet-dev.github.io/ci-milestone-project-1/courses.html)
 
 ### Code
-Many of the references have been embedded as links throughout this document and indicated by the active blue text.
+Although the code is the work of the author, some of the code has been sourced from or inspired by others.
+
+Many of the references have been embedded as links throughout this document and indicated by the active blue text links.
 
 [Bootstrap 5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
