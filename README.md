@@ -35,15 +35,16 @@ The site is designed to be responsive and accessible on a range of devices, maki
 <h2 align="center"><img src="docs/pictures/josh-hild-unsplash.png"></h2>
 
 ## User Experience (UX)
-### User stories
-* As a visiting user, I would like to connect with the company via their social media.
-* As a visiting user, I would like to see if there are more advanced courses.
-* As a visiting user,  I would like to subscribe to a newsletter in order to receive current news about the site.
-
 ### User personas
-These user personas represent some of the target audience for this site - [view the PDF document](docs/ux/user-personas.pdf).
+These user personas represent some of the possible target audience for this site - [view the PDF document](docs/ux/user-personas.pdf).
 
 User personas help humanise the potential users. They depict their struggles, limitations, background and their goals. They give the designer yet another layer of information about the ethos of the project.
+
+### User stories
+As this is a brand new site with limited features, so the user stories were taken from the perspective of the visiting or anonymous user. We don't have any traffic data yet and we don't really know who are users are at this point.
+* As a visiting user, I would like to connect with the company via their social media.
+* As a visiting user, I would like to see if there are more advanced courses.
+* As a visiting user, I would like to subscribe to a newsletter in order to receive current news about the site.
 
 ### Design
 * Colour Scheme
@@ -234,7 +235,17 @@ confirmation.html
 <h2 align="left"><img src="docs/pictures/confirm-summary-mobile.jpg"></h2>
 
 ### Testing User Stories
-
+* As a visiting user, I would like to connect with the company via their social media.
+	- Upon visiting the Home page, the user is able to clearly see the company's social media accounts on the footer.
+	- The social media accounts included are:
+		- Twitter: users can follow and tag the company or share content. If the company follows the user back, then direct messaging is available.
+		- LinkedIn: users can follow and tag the company or share content. If their connection requests are accepted, then direct messaging is available.
+		- TikTok: users can follow the company or tag it in their video captions.
+* As a visiting user, I would like to see if there are more advanced courses.
+	- On the Courses page, the user is greeted by several course cards, listing the course details. 
+	- The user can choose from advanced several-month bootcamp courses to a year-long [Level 5 diploma](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels#).
+* As a visiting user, I would like to subscribe to a newsletter in order to receive current news about the site.
+	- On the About page, the user is greeted with information about the site and it's creators. They are asked to subscribe to a weekly newsletter via a simple form.
 
 ### Further Testing
 1. Testing and validation was carried out on the Chrome browser, though the site was viewed through others (including [Microsoft Edge](docs/pictures/edge.jpg)) to check the functionality of the site remained the same.
@@ -720,11 +731,9 @@ When the user selects an active area of the screen, the following results will b
 			- if any character/s followed by @ then alpha-numeric character/s . alpha-numeric character/s entered:
 				- no error message and form is submitted. User is taken to confirmation.html.	
 
-            <h2 align="left"><img src="docs/pictures/form-check-min.jpg"></h2>
-					
+            <h2 align="left"><img src="docs/pictures/form-check-min.jpg"></h2>				
 
 	Note: 	The default HTML valid email checker, whilst it is comprehensive, it does allow for non-standard email formats. In today's real world this should not be relied on. For further information see the specification published by [WHATWG](https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address)
-
 
 * On the footer area of desktop and mobile devices:
 	1. Clicking or tapping the Email *envelope* footer icon will:
@@ -914,10 +923,6 @@ A huge thank you to the following people and organisations, because without you,
 
 ### From the Course
 
-Rohit Sharma - [Code Institute](https://codeinstitute.net/) Mentor
-
-Rachel Furlong - [EKC DigitalLearn](https://ekcgroup.ac.uk/business-units/ekc-digitallearn) Course Facilitator
- 
 Sample README and GitHub deployment instructions from [Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME)
 
 Markdown Cheatsheet from [Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#html)
@@ -966,3 +971,10 @@ Many of the references have been embedded as links throughout this document and 
 [How to disable the browser back button](https://www.cluemediator.com/how-to-disable-the-browser-back-button-using-javascript) by Clue Mediator
 
 [Never use the unload event](https://web.dev/bfcache/?utm_source=lighthouse&utm_medium=devtools#never-use-the-unload-event) by Philip Walton and Barry Pollard
+
+## Acknowledgements
+
+Rohit Sharma - [Code Institute](https://codeinstitute.net/) Mentor, for the continuous feedback and guidance in industry standards.
+
+Rachel Furlong - [EKC DigitalLearn](https://ekcgroup.ac.uk/business-units/ekc-digitallearn) Course Facilitator, for generous support and advice.
+ 
