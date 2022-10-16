@@ -136,6 +136,10 @@ hr {
     text-shadow: 1px 1px #212529;
 }
 
+.card picture {
+    padding: 10px;
+}
+
 .card-link {
     color: #212529;
     font-weight: bolder;

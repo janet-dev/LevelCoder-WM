@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Tech courses in West Midlands">
+    <meta name="keywords"
+        content="courses, bootcamps, web development, software development, full stack, front end, career, tech, west midlands">
+    <meta name="author" content="Janet Dornan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7c6e646adf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>LevelCoder | Find tech meetups in the West Midlands and UK</title>
+</head>
+
+<body>
+    <!--Bootstrap standard navbar with collapsing Burger menu for mobiles -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">LevelCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="community.html">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero image with opaque overlay to darken the image and provide site wide consistency -->
+    <div class="container-fluid hero-container courses-container">
+        <div class="opaque-overlay">&nbsp;</div>
+        <!-- This next div container holds unspecified rows with columns. The screen size will determine the number of columns displayed per screen row. 
+            The small screens will display 1 column, medium 2 columns and large or greater 3 columns per row.
+            As the screen size decreases, the columns will wrap onto the next row as appropriate. Each non-full width row will contain a Bootstrap card. -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+            <div class="col full-width">
+                <p>Local Groups</p>
+            </div>
+            <div class="col">
+                <!-- Each card shall be the same length using class .h-100.
+                As not all browsers can display a .webp image, an alternative .jpg version is used as a fallback option -->
+                <div class="card h-100" style="width: 18rem;">
+                    <picture>
+                        <img src="https://pbs.twimg.com/profile_images/775424869265793024/NA5jYXmm_400x400.jpg" class="card-img-top" alt="codebar logo">
+                    </picture>
+                    <div class="card-body">
+                        <h5 class="card-title">Pair Programming</h5>
+                        <p class="card-text">We are a charity that runs free programming workshops for minority group members. We are all about community and making a difference.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Minority groups</li>
+                        <li class="list-group-item">Workshops</li>
+                        <li class="list-group-item">Monthly</li>
+                        <li class="list-group-item">1 evening</li>
+                        <li class="list-group-item">Birmingham | In person</li>
+                        <li class="list-group-item">Free</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://codebar.io/birmingham" class="card-link">codebar Birmingham</a>
+                        <a target="_blank" href="https://twitter.com/codebarbrum">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">codebar Birmingham Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 18rem;">
+                    <picture>
+                        <img src="https://pbs.twimg.com/profile_images/1535997084033241098/xKz2Jjp-_400x400.jpg" class="card-img-top" alt="TechMids logo">
+                    </picture>
+                    <div class="card-body">
+                        <h5 class="card-title">Tech</h5>
+                        <p class="card-text">Running a conference for engineers. A collective of meetup organisers helping each other out.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">All backgrounds</li>
+                        <li class="list-group-item">Conference</li>
+                        <li class="list-group-item">Annual</li>
+                        <li class="list-group-item">All day</li>
+                        <li class="list-group-item">Birmingham | In person</li>
+                        <li class="list-group-item">Free</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://conf.techmids.io/" class="card-link">TechMids</a>
+                        <a target="_blank" href="https://twitter.com/techmids">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">TechMids Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  h-100" style="width: 18rem;">
+                    <picture>
+                        <img src="https://pbs.twimg.com/profile_images/1100034178312294401/3hOUTCVH_400x400.jpg" class="card-img-top" alt="Fusion logo">
+                    </picture>
+                    <div class="card-body">
+                        <h5 class="card-title">Tech</h5>
+                        <p class="card-text">
+                            We are the Fusion Group! Here you will find information on Talent, Events and Workshops.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">All backgrounds</li>
+                        <li class="list-group-item">Meetup</li>
+                        <li class="list-group-item">Every 3-4 months</li>
+                        <li class="list-group-item">1 evening</li>
+                        <li class="list-group-item">Birmingham | In person</li>
+                        <li class="list-group-item">Free</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://meetup.thefusionhub.co.uk/" class="card-link">Fusion</a>
+                        <a target="_blank" href="https://twitter.com/thefusion_hub">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Fusion Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  h-100" style="width: 18rem;">
+                    <picture>
+                        <img src="https://pbs.twimg.com/profile_images/1408775037998469121/tzArk3Rr_400x400.jpg" class="card-img-top"
+                            alt="Brum.js logo">
+                    </picture>
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript | Tech</h5>
+                        <p class="card-text">
+                            Social first tech Meetup in Birmingham, we also chat about JavaScript.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">All backgrounds</li>
+                        <li class="list-group-item">Meetup</li>
+                        <li class="list-group-item">Every 2 months</li>
+                        <li class="list-group-item">1 evening</li>
+                        <li class="list-group-item">Birmingham | In person</li>
+                        <li class="list-group-item">Free</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://brum.js.org/" class="card-link">Brum.js</a>
+                        <a target="_blank" href="https://twitter.com/brumjs">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Brum.js Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  h-100" style="width: 18rem;">
+                    <picture>
+                        <img src="https://pbs.twimg.com/profile_images/1338936042251030532/uBMciQzM_400x400.jpg" class="card-img-top" alt="Brum AI logo">
+                    </picture>
+                    <div class="card-body">
+                        <h5 class="card-title">Artificial Intelligence</h5>
+                        <p class="card-text">
+                            The Home of AI in the Midlands - Birmingham Artificial Intelligence Meetup.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">All backgrounds</li>
+                        <li class="list-group-item">Meetup</li>
+                        <li class="list-group-item">Monthly</li>
+                        <li class="list-group-item">1 evening</li>
+                        <li class="list-group-item">Birmingham | In person</li>
+                        <li class="list-group-item">Free</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://linktr.ee/brumai" class="card-link">Brum AI</a>
+                        <a target="_blank" href="https://twitter.com/brum_AI">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Brum AI Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  h-100" style="width: 18rem;">
+                    <picture>
+                        <img src="https://pbs.twimg.com/profile_images/378800000296518182/c12cdd39cf7a868d6d059d39e7a91232_400x400.png" class="card-img-top" alt="Leamington Geeks logo">
+                    </picture>
+                    <div class="card-body">
+                        <h5 class="card-title">Tech</h5>
+                        <p class="card-text">
+                            Geek social event in Leamington Spa, currently operating online using google hangouts.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">All backgrounds</li>
+                        <li class="list-group-item">Meetup</li>
+                        <li class="list-group-item">Monthly</li>
+                        <li class="list-group-item">1 evening</li>
+                        <li class="list-group-item">Leamington Spa | In person</li>
+                        <li class="list-group-item">Free</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://leamgeeks.com/" class="card-link">Leamington Geeks</a>
+                        <a target="_blank" href="https://twitter.com/leamgeeks">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Leamington Geeks Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col full-width">
+                <hr>
+                <p>Remote Groups</p>
+            </div>
+            <div class="col">
+                <!-- Each card shall be the same length using class .h-100.
+                As not all browsers can display a .webp image, an alternative .jpg version is used as a fallback option -->
+                <div class="card h-100" style="width: 18rem;">
+                    <picture>
+                        <img src="https://pbs.twimg.com/profile_images/775424869265793024/NA5jYXmm_400x400.jpg" class="card-img-top" alt="codebar logo">
+                    </picture>
+                    <div class="card-body">
+                        <h5 class="card-title">Pair Programming | Tech</h5>
+                        <p class="card-text">We are a charity that runs free programming workshops for minority group members. We are all about community and making a difference.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Minority groups</li>
+                        <li class="list-group-item">Workshops | Events</li>
+                        <li class="list-group-item">Monthly</li>
+                        <li class="list-group-item">1-2 evenings</li>
+                        <li class="list-group-item">Global | In person | Remote</li>
+                        <li class="list-group-item">Free</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://codebar.io/" class="card-link">codebar</a>
+                        <a target="_blank" href="https://twitter.com/codebar">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">codebar Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  h-100" style="width: 18rem;">
+                    <picture>
+                        <img src="https://pbs.twimg.com/profile_images/1110245887564021768/ZR2DX_DV_400x400.jpg" class="card-img-top" alt="Coding Black Females logo">
+                    </picture>
+                    <div class="card-body">
+                        <h5 class="card-title">Software</h5>
+                        <p class="card-text">
+                            Your fave global community of Black Women and Non-Binary folk in tech.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Black women & non-binary</li>
+                        <li class="list-group-item">Community | Meetup</li>
+                        <li class="list-group-item">Monthly</li>
+                        <li class="list-group-item">2 evenings</li>
+                        <li class="list-group-item">Leamington Spa | In person</li>
+                        <li class="list-group-item">Free</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://linktr.ee/codingblackfemales" class="card-link">Coding Black Females</a>
+                        <a target="_blank" href="https://twitter.com/codingblackfems">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Coding Black Females Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  h-100" style="width: 18rem;">
+                    <picture>
+                        <img src="https://pbs.twimg.com/profile_images/1512032637120045059/gIbHFD_p_400x400.jpg" class="card-img-top" alt="GirlCode logo">
+                    </picture>
+                    <div class="card-body">
+                        <h5 class="card-title">Tech Career</h5>
+                        <p class="card-text">
+                            Women-in-Tech Online Community & Technology Consultancy - We are on a mission to close the Tech Gender Gap now at over 50,000 members.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Women & non-binary</li>
+                        <li class="list-group-item">Community | Meetup</li>
+                        <li class="list-group-item">Monthly</li>
+                        <li class="list-group-item">Times vary</li>
+                        <li class="list-group-item">London | Remote</li>
+                        <li class="list-group-item">Free</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://www.girl-code.co.uk/" class="card-link">GirlCode</a>
+                        <a target="_blank" href="https://twitter.com/GirlCodeRec">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">GirlCode Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <ul class="list-inline social-links py-3">
+            <li class="list-inline-item">
+                <p>Follow </p>
+            </li>
+            <li class="list-inline-item">
+                <a target="_blank" href="https://twitter.com/levelcoder_wm">
+                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">LevelCoder West Mids Twitter</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a target="_blank" href="https://www.linkedin.com/in/janetdornan/">
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    <span class="sr-only">Janet Dornan LinkedIn</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a target="_blank" href="https://www.tiktok.com/en/">
+                    <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                    <span class="sr-only">TikTok</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
