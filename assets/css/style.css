@@ -185,7 +185,7 @@ These styles were changed and copied from Chrome developer tools*/
     --bs-btn-hover-border-color: #212529;
 }
 
-form {
+section {
     z-index: 0;
     color: #ffffff;
     text-shadow: 1px 1px #212529;
@@ -193,16 +193,8 @@ form {
     font-weight: 400;
 }
 
-form h2 {
+section h2 {
     font-weight: 300;
-}
-
-.confirm-container {
-    height: 100vh;
-}
-
-.confirm-h2 {
-    text-shadow: 1px 1px #212529;
 }
 
 footer {

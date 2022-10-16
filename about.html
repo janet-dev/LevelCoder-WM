@@ -13,16 +13,6 @@
     <script src="https://kit.fontawesome.com/7c6e646adf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>LevelCoder | Connect with us | Join our tech community</title>
-    <!--Script to disable back button after form submission. Stops user from viewing form data again.-->
-    <script>
-        function disableBack() {
-            window.history.forward();
-        }
-        setTimeout("disableBack()", 0);
-        window.onpagehide = function () {
-            null
-        };
-    </script>
 </head>
 
 <body>
@@ -56,10 +46,7 @@
     <!-- Hero image with opaque overlay to darken the image and provide site wide consistency -->
     <div class="container-fluid hero-container  about-container">
         <div class="opaque-overlay">&nbsp;</div>
-        <!-- Signup form with explanatory text, enticing the user to subscribe to a newsletter. 
-        Instead of the page being refreshed, after selecting the Subscribe button, a confirmation page will be opened in the same tab -->
-        <form class="row g-5" method="GET" action="confirmation.html">
-            <input type="submit" value="Go to my link location" name="submit">
+        <section class="row g-5">
             <div class="col-12">
                 <h2 class="about-h2">What is this site about?</h2>
                 <p>
@@ -83,26 +70,13 @@
                     are clueless about where and how to start their journey into a tech career.
                 </p>
                 <p>
-                    Currently this is a minimal viable product (MVP) which will be made open source in the near future.
-                    We hope that others will contribute to this project, by improving it, adding to it or even coping it
+                    Currently this is a minimal viable product (MVP) and is now open source under the MIT licence. 
+                    We hope that others will contribute to this project, by improving it, adding to it or even copying it
                     for their own community.
-                    Join our friendly community and keep up to date with local events by subscribing to our newspaper
-                    below.
+                    Join our friendly community and keep up to date with local events by connecting with us below.
                 </p>
             </div>
-            <h2>Sign up for our weekly newsletter <i class="fa-solid fa-users-between-lines"></i></h2>
-            <div class="col-md-6">
-                <label for="inputFirstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="inputFirstName" placeholder="First name" required>
-            </div>
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email address" required>
-            </div>
-            <div class="col-12 btn-subscribe">
-                <button type="submit" class="btn btn-warning">Subscribe</button>
-            </div>
-        </form>
+        </section>
     </div>
     <!-- Footer containing inline email and linked social media icons -->
     <footer class="container-fluid">
@@ -133,9 +107,9 @@
                 </a>
             </li>
             <li class="list-inline-item">
-                <a target="_blank" href="https://www.tiktok.com/en/">
-                    <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-                    <span class="sr-only">TikTok</span>
+                <a target="_blank" href="https://github.com/janet-dev/LevelCoder-WM">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span class="sr-only">LevelCoder GitHub Repository</span>
                 </a>
             </li>
         </ul>
