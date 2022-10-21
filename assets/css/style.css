@@ -167,25 +167,7 @@ hr {
     padding-top: 5rem;
 }
 
-.btn-subscribe {
-    padding-bottom: 1.5rem;
-}
-
-/*Overrides the standard Bootstrap button colours to suit the site colour scheme.
-These styles were changed and copied from Chrome developer tools*/
-.btn-warning {
-    font-weight: 500;
-    --bs-btn-color: #212529;
-    --bs-btn-bg: #ff8c00;
-    --bs-btn-border-color: #ff8c00;
-    --bs-btn-active-bg: #ff8c00;
-    --bs-btn-active-border-color: #ff8c00;
-    --bs-btn-hover-color: #ff8c00;
-    --bs-btn-hover-bg: #212529;
-    --bs-btn-hover-border-color: #212529;
-}
-
-section {
+.about-section {
     z-index: 0;
     color: #ffffff;
     text-shadow: 1px 1px #212529;
@@ -193,7 +175,7 @@ section {
     font-weight: 400;
 }
 
-section h2 {
+.about-section h2 {
     font-weight: 300;
 }
 
