@@ -55,8 +55,33 @@ Different coloured text surrounding the main heading gives a friendly feel*/
 all anchor tags have a bar above the text*/
 a {
     text-decoration: overline;
+    transition: all 0.2s;
 }
 
+/* added individual color changes for onHover on social media icons - not sure if keeping, so using !important for now */
+.fa-brands {
+    transition: color 0.2s;
+}
+
+i.fa-twitter:hover {
+    color: #1DA1F2 !important;
+}
+
+i.fa-github:hover {
+    color: black !important;
+}
+
+i.fa-linkedin-in:hover {
+    color: #0072b1 !important;
+}
+
+i.fa-instagram:hover {
+    color: hotpink !important;
+}
+
+i.fa-facebook:hover {
+    color: #1877F2 !important;
+}
 /*The hero image covers the viewport and has an opaque layer on top.
 This makes the image a bit darker, in order to contrast better with any overlaid text.
 This code came from the Code Institute Whiskey Drop walkthrough lessons.
@@ -163,8 +188,9 @@ hr {
     height: auto;
 }
 
+/* 1rem top/bottom padding, 0 horizontal padding for h2 titles */
 .about-h2 {
-    padding-top: 5rem;
+    padding: 1rem 0;
 }
 
 .about-section {
@@ -177,6 +203,13 @@ hr {
 
 .about-section h2 {
     font-weight: 300;
+}
+
+/* even out spacing for About paragraphs - main justification for adding background color different from the colour scheme
+ is that the text is a bit difficult to read  */
+.about-paragraph {
+    border-radius: 20px;
+    background: rgba(0,0,0,0.5);
 }
 
 footer {
@@ -201,4 +234,16 @@ footer p {
 
 footer i:hover {
     color: #ff8c00;
+    transition: all 0.2s;
+}
+
+/* Fix mobile spacing for the About page */
+@media screen and (max-width: 768px) {
+    .about-paragraph:first-of-type {
+        margin-top: 9rem;
+    }
+
+    .about-paragraph:last-of-type {
+        margin-bottom: 3rem;
+    }
 }
