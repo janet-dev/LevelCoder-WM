@@ -1,7 +1,5 @@
 ## Project Purpose
-This is a Code Institute student project for Milestone 1, built to satisfy the requirements for the EKC DigitalLearn Diploma (Level 5) in [Web Application Development](https://www.ekcgroup.ac.uk/ekc-digitallearn/computing/web-application-development-diploma). 
-
-This project has been created in order to display useful information on a deployed static website. The project was built using **Gitpod**.
+The project was built using **Gitpod**.
 
 The information has been presented in a way that ensures the users achieve their goals of:
 * understanding what the site's function is
@@ -255,7 +253,7 @@ Many of the references have been embedded as links throughout this document and 
 
 ## Acknowledgements
 
-Rohit Sharma - [Code Institute](https://codeinstitute.net/) Mentor, for the continuous feedback and guidance in industry standards.
+Rohit Sharma, Code Institute - for the continuous feedback and guidance in industry standards.
 
-Rachel Furlong - [EKC DigitalLearn](https://ekcgroup.ac.uk/business-units/ekc-digitallearn) Course Facilitator, for generous support and advice.
+Rachel Furlong, EKC - for generous support and advice.
  
