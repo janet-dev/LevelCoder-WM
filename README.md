@@ -4,7 +4,7 @@ The project was built using **Gitpod**.
 The information has been presented in a way that ensures the users achieve their goals of:
 * understanding what the site's function is
 * finding appropriate technical courses
-* being able to subscribe to our newsletter or email queries to us
+* being able to email queries to us
 
 The site also enhances the owner's goals by:
 * paying back to the tech community
