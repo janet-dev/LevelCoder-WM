@@ -1,4 +1,4 @@
-## Testing the original site
+## Testing the First Deployment of the Home, Courses and About Pages
 
 **The site was built, tested and validated on the [Chrome browser](docs/pictures/chrome.jpg) only.**
 
@@ -40,7 +40,6 @@ Classes -md- and -lg- were specially defined for the courses page, where Bootstr
     - [index.html PDF report](docs/testing/w3c-validation/w3c-html-index.pdf)
     - [courses.html PDF report](docs/testing/w3c-validation/w3c-html-courses.pdf)
     - [about.html PDF report](docs/testing/w3c-validation/w3c-html-about.pdf)
-    - [confirmation.html PDF report](docs/testing/w3c-validation/w3c-html-confirm.pdf)
 
 * CSS - No errors or warnings were detected by W3C Jigsaw Validation for:
     - [style.css PDF report](docs/testing/w3c-validation/w3c-css.pdf)
@@ -69,10 +68,6 @@ about.html
 - [Desktop PDF report](docs/testing/lighthouse-reports/lighthouse-about-desktop-2.pdf)
 - [MobilePDF report](docs/testing/lighthouse-reports/lighthouse-about-mobile-2.pdf)
 
-confirmation.html
-
-- [Desktop PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-desktop.pdf)
-- [Mobile PDF report](docs/testing/lighthouse-reports/lighthouse-confirm-mobile.pdf)
 
 ### Testing User Stories
 * As a visiting user, I would like to connect with the company via their social media.
